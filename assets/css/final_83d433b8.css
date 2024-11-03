@@ -2071,14 +2071,24 @@ img {
   padding: 10px 0px;
   gap: 10px;
 }
+@media only screen and (max-width: 829px) {
 
-.logo-badges {
+.logo-badges-mobile {
   display: flex;
+  justify-content: center;
+  align-items: center;
+ /* Adjust the gap between badges as needed */
+  padding: 20px 0px 10px 0px;
+  gap: 20px;
+}
+.logo-badges {
+  display: none;
   justify-content: center;
   align-items: center;
  /* Adjust the gap between badges as needed */
   padding: 40px 0px 20px 0px;
   gap: 20px;
+}
 }
 .gbadge {
   height: 50px; /* Adjust the height as needed */
@@ -2089,12 +2099,21 @@ img {
   transition: transform 0.2s;
 }
 .badge {
-  height: 52px; /* Adjust the height as needed */
+  height: 40px; /* Adjust the height as needed */
+  width: 160px;
   transition: transform 0.2s;
   padding: 3px;
 }
 
 @media only screen and (min-width: 830px) {
+  .logo-badges-mobile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+   /* Adjust the gap between badges as needed */
+    padding: 40px 0px 20px 0px;
+    gap: 20px;
+  }
   .app-badges {
     display: flex;
     justify-content: start;
@@ -2107,12 +2126,12 @@ img {
   }
   .logo-badges {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
    /* Adjust the gap between badges as needed */
     margin-top: 70px;
-    padding: 10px 0px 0px 10px;
-    gap: 30px;
+    padding: 0px 0px 40px 10px;
+    gap: 35px;
   }
   .gbadge {
     height: 60px; /* Adjust the height as needed */
