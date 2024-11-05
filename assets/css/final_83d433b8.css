@@ -2221,22 +2221,22 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 
 .card { /* Light blue background */
   border-radius: 16px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 /* Fixed width */
   padding: 20px; /* Padding inside the card */
   margin: 5px 25px ;
-  max-width: 340px;
+  width: 340px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Distribute space between children */
-  align-items: end;
+  align-items: center;
   text-align: start;
   height: 380px; /* Full height */
 }
 
 
 .card-content {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .card h2 {
@@ -2278,11 +2278,11 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 
 
 .card-image {
-  width: 70%;
-  height: 200px;
+  width: 90%;
+  height: 330px;
   display: flex;
   object-fit: contain;
-  justify-content: end; /* Center the image horizontally */
+  justify-content: center; /* Center the image horizontally */
 }
 
 .card-image img {
@@ -2310,7 +2310,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Distribute space between children */
-  align-items: end;
+  align-items: center;
   text-align: start;
   height: 400px; /* Full height */
 }
@@ -2380,7 +2380,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribute space between children */
-    align-items: end;
+    align-items: center;
     text-align: start;
     height: 480px; /* Full height */
   }
@@ -2419,8 +2419,8 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
   
 
   .card-image {
-    width: 80%;
-    height: 230px;
+    width: 330px;
+    height: 360px;
     display: flex;
     object-fit: contain;
     justify-content: end; /* Center the image horizontally */
@@ -3714,7 +3714,7 @@ button {
 }
 
 .footer {
-  background-color: #080808;
+  background-color: #2e3240;
   color: #fff;
   padding: 60px 0 48px
 }
@@ -5669,15 +5669,11 @@ width: 170px;
 }
 
 .page__header__qr-code-fallback {
-  display: none;
+
   margin-bottom: 2rem
 }
 
-@media only screen and (max-width: 1059px) {
-  .page__header__qr-code-fallback {
-    display: block
-  }
-}
+
 
 .page__header__qr-code-fallback__button {
   color: #080808
