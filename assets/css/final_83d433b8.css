@@ -2278,7 +2278,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 
 
 .card-image {
-  width: 90%;
+  width: 95%;
   height: 330px;
   display: flex;
   object-fit: contain;
