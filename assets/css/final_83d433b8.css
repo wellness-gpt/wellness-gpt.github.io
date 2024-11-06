@@ -2278,7 +2278,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 
 
 .card-image {
-  width: 95%;
+  width: 300px;
   height: 330px;
   display: flex;
   object-fit: contain;
@@ -6132,7 +6132,7 @@ width: 170px;
 }
 
 .section--inset-s {
-  padding: 40px 0
+  padding: 80px 0
 }
 
 @media only screen and (min-width: 760px) {
