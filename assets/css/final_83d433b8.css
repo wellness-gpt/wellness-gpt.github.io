@@ -515,11 +515,11 @@ i {
   white-space: normal
 }
 
-@media only screen and (min-width: 760px) {
+/* @media only screen and (min-width: 760px) {
   .col {
     padding-left: 24px
   }
-}
+} */
 
 .col--fixed {
   -webkit-box-flex: 0;
@@ -1040,11 +1040,11 @@ img {
 .header__logo::after,
 .icon--blippar::before,
 .icon-end--blippar::after {
-  content: "HeyDoc";
+  content: "HeyDoc AI";
   font-size: 30px;
-  color: #0c2e31;
+  color: #fff;
   font-weight: 700;
-  margin-left: -45px;
+  margin-left: -20px;
 
   font-family: Helvetica, sans-serif;
  
@@ -4665,17 +4665,17 @@ width: 170px;
 
 @media only screen and (min-width: 1060px) {
   .header__nav--main {
-    width: 640px;
+    padding: 0px 20px;
     margin-bottom: 0;
-    margin-left: 60px;
+    align-self:center;
     text-align: left
   }
 }
 @media only screen and (min-width: 1180px) {
   .header__nav--main {
-    width: 720px;
+
     margin-bottom: 0;
-    margin-left: auto;
+    align-self:center;
     text-align: left
   }
 }
@@ -4830,7 +4830,14 @@ width: 170px;
 
 @media only screen and (min-width: 1060px) {
   .header__side {
-    width: 120px
+    width: 180px
+  }
+}
+@media only screen and (min-width: 1060px) {
+  .header__optionside {
+    /* width: 680px; */
+    margin: auto;
+
   }
 }
 @media only screen and (min-width: 1060px) {
