@@ -2290,6 +2290,18 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
   border-radius: 16px; /* Rounded corners */
 }
 
+.icon-image {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  object-fit: contain;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.icon-image img {
+  width: 100%; /* Full width image */
+  border-radius: 16px; /* Rounded corners */
+}
 .section-title{
   color: #080808;
   padding: 25px 10px 0px 10px;
@@ -2426,6 +2438,18 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
     justify-content: end; /* Center the image horizontally */
   }
   .card-image img {
+    width: 100%; /* Full width image */
+    border-radius: 16px; /* Rounded corners */
+  }
+
+  .icon-image {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    object-fit: contain;
+    justify-content: end; /* Center the image horizontally */
+  }
+  .icon-image img {
     width: 100%; /* Full width image */
     border-radius: 16px; /* Rounded corners */
   }
