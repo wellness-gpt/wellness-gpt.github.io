@@ -2196,14 +2196,11 @@ font-weight: 700; font-family: Mona Sans, sans-serif;
 
 .hero-tagline {
   color: #FFF;
-  font-size: 2.525625rem;
+  font-size: 2.425625rem;
   line-height: 110%;
   letter-spacing: -.0124em;
-
-  font-weight: 400; font-family: Mona Sans, sans-serif;
-
+  font-weight: 600; font-family: Mona Sans, sans-serif;
   margin: 0 0 15px 0;
-
   transition-delay: 0ms;
 }
 .hero-title-launch {
@@ -2363,13 +2360,13 @@ font-weight: 700; font-family: Mona Sans, sans-serif;
     
     .hero-tagline {
       color: #FFF;
-      font-size: 2.825625rem;
+      font-size: 3.125625rem;
       line-height: 110%;
       letter-spacing: -.0124em;
     
       font-weight: 600; font-family: Mona Sans, sans-serif;
     
-      margin: 0 0 15px 0;
+      margin: 0 0 25px 0;
 
       transition-delay: 3ms;
     }
