@@ -1,28 +1,33 @@
 @font-face {
-  font-family: "Brandon Grotesque";
-  src: url("../fonts/37A9BB_0_0.woff2") format("woff2"), url("../fonts/37A9BB_0_0.woff") format("woff"), url("../fonts/37A9BB_0_0.ttf") format("truetype");
-  font-weight: 900
+  font-family: "Mona Sans";
+  src: url("../fonts/MonaSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Avenir";
-  src: url("../fonts/37A9A4_1_0.woff2") format("woff2"), url("../fonts/37A9A4_1_0.woff") format("woff"), url("../fonts/37A9A4_1_0.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal
+  font-family: "Mona Sans";
+  src: url("../fonts/MonaSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Avenir";
-  src: url("../fonts/37A9A4_2_0.woff2") format("woff2"), url("../fonts/37A9A4_2_0.woff") format("woff"), url("../fonts/37A9A4_2_0.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic
+  font-family: "Mona Sans";
+  src: url("../fonts/MonaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Avenir";
-  src: url("../fonts/37A9A4_3_0.woff2") format("woff2"), url("../fonts/37A9A4_3_0.woff") format("woff"), url("../fonts/37A9A4_3_0.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal
+  font-family: "Mona Sans";
+  src: url("../fonts/MonaSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -35,6 +40,11 @@
 
 .icon{
   border-radius: 10px;
+}
+
+body,
+body * {
+  font-family: Mona Sans, sans-serif;
 }
 
 
@@ -1046,7 +1056,7 @@ img {
   font-weight: 700;
   margin-left: -20px;
 
-  font-family: Helvetica, sans-serif;
+  font-family: Mona Sans, sans-serif;
  
 }
 
@@ -1876,7 +1886,7 @@ img {
 .page__header--ar-creations .page__title,
 .h2,
 .h {
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   font-weight: 900;
   line-height: 1.25;
   text-transform: uppercase
@@ -2079,7 +2089,7 @@ img {
   padding: 10px 0px;
   gap: 10px;
 }
-@media only screen and (max-width: 829px) {
+@media only screen and (max-width: 1029px) {
 
 .logo-badges-mobile {
   display: flex;
@@ -2119,11 +2129,12 @@ img {
   padding: 3px;
 }
 
-@media only screen and (min-width: 830px) {
+@media only screen and (min-width: 1030px) {
   .logo-badges-mobile {
     display: none;
     justify-content: center;
     align-items: center;
+    width: fit-content;
    /* Adjust the gap between badges as needed */
     padding: 40px 0px 20px 0px;
     gap: 20px;
@@ -2174,7 +2185,7 @@ img {
 }
 
 .hero-title {
-font-weight: 700; font-family: Arial, Helvetica, sans-serif;
+font-weight: 700; font-family: Mona Sans, sans-serif;
  text-transform: none; 
  transition-delay: 0ms;
   color: #FFF;
@@ -2189,7 +2200,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
   line-height: 110%;
   letter-spacing: -.0124em;
 
-  font-weight: 400; font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400; font-family: Mona Sans, sans-serif;
 
   margin: 0 0 15px 0;
 
@@ -2198,7 +2209,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 .hero-title-launch {
   color: #FFF;
   font-size: 40px;
-  font-weight: 700; font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700; font-family: Mona Sans, sans-serif;
   text-transform: capitalize;
   transition-delay: 0ms;
   }
@@ -2206,7 +2217,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 .hero-launch {
   color: #FFF;
   font-size: 25px;
-  font-weight: 700; font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700; font-family: Mona Sans, sans-serif;
   margin: 0 10px 20px 10px;
   text-transform: capitalize;
   transition-delay: 0ms;
@@ -2252,7 +2263,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 }
 
 .card h2 {
-  color: #FFF;font-size:1.3em;font-weight: 700; font-family: Arial, Helvetica, sans-serif; text-transform: none; transition-delay: 0ms;
+  color: #FFF;font-size:1.3em;font-weight: 700; font-family: Mona Sans, sans-serif; text-transform: none; transition-delay: 0ms;
   margin: 0 0 20px 0;
 
 }
@@ -2319,7 +2330,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
   padding: 25px 10px 0px 10px;
   font-size:24px;
   font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Mona Sans, sans-serif; 
   text-transform:none"
 }
 
@@ -2343,7 +2354,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 
 @media only screen and (min-width: 960px) {
   .hero-title {
-    font-weight: 700; font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700; font-family: Mona Sans, sans-serif;
      text-transform: none; 
      transition-delay: 3ms;
       color: #FFF;
@@ -2356,14 +2367,14 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
       line-height: 110%;
       letter-spacing: -.0124em;
     
-      font-weight: 600; font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600; font-family: Mona Sans, sans-serif;
     
       margin: 0 0 15px 0;
 
       transition-delay: 3ms;
     }
     .hero-title-launch {
-      font-weight: 700; font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700; font-family: Mona Sans, sans-serif;
        text-transform: none; 
        transition-delay: 3ms;
         color: #FFF;
@@ -2373,7 +2384,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
       color: #FFF;
       font-size: 48px;
       font-weight: 700; 
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Mona Sans, sans-serif;
       margin: 30px 0 55px 0;
       text-transform: capitalize;
       transition-delay: 3ms;
@@ -2393,7 +2404,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
     padding: 15px 0px 15px 0px;
     font-size:44px;
     font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Mona Sans, sans-serif; 
     text-transform:none"
   }
   .card { /* Light blue background */
@@ -2433,7 +2444,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
     /* box-shadow: 5px 5px 0px #558f9d; */
   }
   .card h2 {
-    color: #FFF;font-size:2em;font-weight: 700; font-family: Arial, Helvetica, sans-serif; text-transform: none; transition-delay: 0ms;
+    color: #FFF;font-size:2em;font-weight: 700; font-family: Mona Sans, sans-serif; text-transform: none; transition-delay: 0ms;
     margin: 0 0 20px 0;
   
   }
@@ -2726,7 +2737,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 }
 
 .typeset h2 {
-  font-family: Brandon Grotesque, sans-serif
+  font-family: Mona Sans, sans-serif
 }
 
 .typeset h2:not(:first-child) {
@@ -2734,7 +2745,7 @@ font-weight: 700; font-family: Arial, Helvetica, sans-serif;
 }
 
 .typeset h3 {
-  font-family: Brandon Grotesque, sans-serif
+  font-family: Mona Sans, sans-serif
 }
 
 .typeset h3:not(:first-child) {
@@ -2785,13 +2796,15 @@ input,
 textarea,
 button {
   font-size: 16px;
-  font-family: Avenir, sans-serif;
+  font-family: "Mona Sans", sans-serif;
   line-height: 1
 }
 
 body {
-  color: #FFF;
-  line-height: 1.5
+  color: #000;
+  line-height: 1.5;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body:not(.js) .state__section[data-state-class] {
@@ -7137,7 +7150,7 @@ width: 170px;
 
 .stats__stat,
 .work-slide__stat {
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   font-weight: 900;
   text-align: center
 }
@@ -7286,7 +7299,7 @@ width: 170px;
   background-color: rgba(0, 0, 0, .5);
   bottom: 0;
   color: #000;
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   left: 0;
   padding: .8rem 1.25rem;
   position: absolute;
@@ -7503,7 +7516,7 @@ width: 170px;
 
 .faq2__cta-text {
   font-size: 32px;
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   font-weight: bold;
   margin-bottom: 1rem
 }
@@ -7654,7 +7667,7 @@ width: 170px;
 
 .price-plans__card-header {
   border-bottom: 1px solid #000;
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   min-height: 8rem;
   text-transform: uppercase
 }
@@ -7700,7 +7713,7 @@ width: 170px;
 }
 
 .price-plans__card-details-header {
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   margin-bottom: 1rem;
   text-transform: uppercase
 }
@@ -7740,7 +7753,7 @@ width: 170px;
 
 .info-block__header {
   font-size: 24px;
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   margin-bottom: 1rem;
   text-transform: uppercase
 }
@@ -7760,7 +7773,7 @@ width: 170px;
 
 .video-style-section-card__title {
   font-size: 40px;
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   text-transform: uppercase
 }
 
@@ -7790,7 +7803,7 @@ width: 170px;
 }
 
 .section-progress-card__title {
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   margin-bottom: 1rem;
   text-transform: uppercase
 }
@@ -7858,7 +7871,7 @@ width: 170px;
 }
 
 .video-and-qr-card__title {
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   margin-bottom: 1.5rem;
   text-transform: uppercase
 }
@@ -8693,7 +8706,7 @@ input:checked+.slider:before {
 }
 
 .custom-services-header {
-  font-family: Brandon Grotesque, sans-serif;
+  font-family: Mona Sans, sans-serif;
   color: #177af9;
   background-color: #000;
   padding: 10px 15px;
