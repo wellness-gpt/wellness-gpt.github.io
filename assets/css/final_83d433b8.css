@@ -2254,7 +2254,7 @@ font-weight: 700; font-family: Mona Sans, sans-serif;
   justify-content: space-between; /* Distribute space between children */
   align-items: center;
   text-align: start;
-  height: 380px; /* Full height */
+  height: 420px; /* Full height */
 }
 
 
