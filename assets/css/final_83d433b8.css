@@ -2128,6 +2128,134 @@ img {
   transition: transform 0.2s;
   padding: 3px;
 }
+/* =========================
+   Agentic Launch Banner
+   Minimal, subtle, responsive
+   ========================= */
+
+   .agentic-launch-wrap { position: relative; margin-bottom: 18px; }
+   .agentic-banner {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 28px;
+     background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+     border: 1px solid rgba(255,255,255,0.06);
+     padding: 20px;
+     border-radius: 14px;
+     backdrop-filter: blur(6px);
+     -webkit-backdrop-filter: blur(6px);
+     box-shadow: 0 8px 30px rgba(2,6,12,0.45);
+   }
+   
+   /* Left content */
+   .agentic-banner__left { flex: 1 1 60%; min-width: 220px; color: #fff; }
+   .agentic-badge {
+     display: inline-block;
+     font-size: 12px;
+     letter-spacing: 0.6px;
+     background: rgba(255,255,255,0.06);
+     color: #fff;
+     padding: 6px 10px;
+     border-radius: 999px;
+     margin-bottom: 8px;
+     font-weight: 600;
+   }
+   .agentic-title {
+     margin: 0 0 8px 0;
+     font-size: 22px;
+     line-height: 1.08;
+     font-weight: 800;
+     color: #fff;
+   }
+   .agentic-sub {
+     margin: 0 0 14px 0;
+     color: rgba(255,255,255,0.86);
+     font-size: 14px;
+     max-width: 680px;
+     font-weight: 400;
+   }
+   
+   /* CTAs */
+   .agentic-ctas { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+   .agentic-btn{ text-decoration:none; display:inline-block; padding:10px 18px; border-radius:32px; font-weight:700; font-size:14px; }
+   .agentic-btn--primary{ background: linear-gradient(90deg,#6b2ff0,#ff4db6); color:#fff; box-shadow: 0 6px 18px rgba(107,47,240,0.18); border: none; }
+   .agentic-btn--ghost{ background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.12); }
+   
+   /* Right visual */
+   .agentic-banner__right{ flex: 0 0 220px; display:flex; align-items:center; justify-content:flex-end; position: relative; }
+   .agentic-visual {
+     width: 160px;
+     height: 72px;
+     border-radius: 12px;
+     background: linear-gradient(90deg, rgba(107,47,240,0.18), rgba(255,77,182,0.12));
+     box-shadow: inset 0 0 18px rgba(255,255,255,0.02);
+     position: relative;
+     overflow: hidden;
+   }
+   /* simple animated "nodes" strip (subtle) */
+   .agentic-visual::before{
+     content: '';
+     position:absolute; left:-40%; top: -10%;
+     width: 220%; height: 140%;
+     background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.10) 0, transparent 8%),
+                 radial-gradient(circle at 60% 60%, rgba(255,255,255,0.07) 0, transparent 12%);
+     transform: rotate(12deg);
+     animation: agentic-glow 6s linear infinite;
+     opacity: 0.9;
+   }
+   @keyframes agentic-glow { 0% { transform: translateX(-8%) rotate(10deg);} 50% { transform: translateX(6%) rotate(12deg);} 100% { transform: translateX(-8%) rotate(10deg);} }
+   
+   /* Dismiss button */
+   .agentic-dismiss {
+     position: absolute;
+     top: -10px;
+     right: -10px;
+     background: rgba(0,0,0,0.6);
+     color:#FFF;
+     border: none;
+     width: 34px;
+     height: 34px;
+     border-radius: 999px;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     cursor:pointer;
+     font-weight:800;
+     box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+   }
+   
+   /* Announcement bar (optional) */
+   .agentic-announcement-bar{
+     display:none; /* default hidden; set to block if you want top bar visible */
+     position: sticky;
+     top: 8px;
+     z-index: 9999;
+     margin-top: 14px;
+     padding: 8px 14px;
+     border-radius: 999px;
+     background: rgba(0,0,0,0.7);
+     text-align:center;
+   }
+   .agentic-ann-link{ color:#fff; font-weight:700; text-decoration:none; font-size:13px;}
+   .agentic-ann-close{ background:transparent; border:none; color:#fff; margin-left:12px; font-weight:700; cursor:pointer; }
+   
+   /* Responsive */
+   @media only screen and (max-width: 960px) {
+     .agentic-banner { flex-direction: column; align-items: flex-start; padding:14px; gap:12px; }
+     .agentic-banner__right{ width:100%; display:flex; justify-content:space-between; align-items:center; }
+     .agentic-banner__left{ min-width:0; }
+     .agentic-title{ font-size:18px; }
+     .agentic-sub{ font-size:13px; max-width:100%; color: rgba(255,255,255,0.88); }
+     .agentic-btn--primary, .agentic-btn--ghost { padding: 9px 14px; font-size:13px; }
+     .agentic-visual{ width:110px; height:56px; border-radius:10px; }
+   }
+   
+   /* Ensure high contrast for accessibility */
+   @media (prefers-reduced-motion: reduce) {
+     .agentic-visual::before { animation: none; }
+   }
+   
 
 @media only screen and (min-width: 1030px) {
   .logo-badges-mobile {

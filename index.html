@@ -800,7 +800,34 @@
 									<!-- <p class="h2--sec carousel__desc wow typeset">
 										<span style="color: #FFF;font-weight: 600; font-family: Arial, Helvetica, sans-serif; text-transform: capitalize; transition-delay: 0ms;">Wellness</span><span style="color: #5e17eb;font-weight: 600; font-family: Arial, Helvetica, sans-serif; text-transform: capitalize; transition-delay: 3ms;">GPT</span> understands that every user is unique, creating personalized health profiles to deliver tailored care and support.</p> -->
 									
-							
+							<!-- START: Agentic Hospital Launch Banner (insert here) -->
+<section class="agentic-launch-wrap" aria-label="Agentic hospital launch announcement">
+	<div class="agentic-banner container--inset-s">
+	  <div class="agentic-banner__left">
+		<div class="agentic-badge" aria-hidden="true">WellnessGPT × ClearMedi Hospitals (backed by Morgan Stanley)</div>
+		<h3 class="agentic-title">India’s first Agentic orchestrated Multi-Speciality hospital</h3>
+		<p class="agentic-sub">ClearMedi × HeyDoc AI marks a watershed moment - we’re launching India’s first Agent-powered Multi-Specialty Hospital to deliver continuous, personalized care at scale with WellnessGPT care agents moving from experimenting with health AI to deploying it at hospital operations scale, a leap that will redefine efficiency, safety, patient experience and operational excellence</p>
+		<div class="agentic-ctas">
+		  <a href="https://www.linkedin.com/posts/heydoc-healthtech_wellnessgpt-ai-heydocai-activity-7396854123989651456-YRjy?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpaBssByMjBLDLtg6rXrvg5gn6rkGAnJ1I" class="agentic-btn agentic-btn--primary" id="agentic-demo-cta">See the Announcement</a>
+		  <a href="https://forms.gle/ovwj9HLPMaPL4sgh6" class="agentic-btn agentic-btn--ghost" target="_blank" rel="noopener">Talk with our team</a>
+		</div>
+	  </div>
+  
+	  <div class="agentic-banner__right" aria-hidden="true">
+		<!-- Minimal schematic Lottie / animated SVG placeholder — swap with final asset -->
+		<div class="agentic-visual" role="img" aria-label="Schematic of agentic hospital showing AI agents and clinician handoffs"></div>
+		<button class="agentic-dismiss" id="agentic-dismiss" aria-label="Dismiss announcement">✕</button>
+	  </div>
+	</div>
+  
+	<!-- Optional slim site-wide announcement bar (copy for header placement OR mobile) -->
+	<div class="agentic-announcement-bar" id="agentic-ann-bar" role="region" aria-live="polite">
+	  <a href="#agentic-section" class="agentic-ann-link">India’s first agentic hospital — WellnessGPT × ClearMedi — Learn more →</a>
+	  <button class="agentic-ann-close" id="agentic-ann-close" aria-label="Close announcement">✕</button>
+	</div>
+  </section>
+  <!-- END: Agentic Hospital Launch Banner (insert here) -->
+  
 							<div style="position: relative; overflow: hidden; width: 100%; padding-top: 56.25%;margin-top: 20px;">
 								<iframe 
 									src="https://www.youtube.com/embed/owhRlHRyMdE?vq=hd1080p&rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1&loop=1&disablekb=1" 
@@ -2335,6 +2362,26 @@
             });
         });
     </script>
+	<script>
+		(function(){
+		  var dismissBtn = document.getElementById('agentic-dismiss');
+		  var banner = document.querySelector('.agentic-launch-wrap');
+		  var annBar = document.getElementById('agentic-ann-bar');
+		  var annClose = document.getElementById('agentic-ann-close');
+	  
+		  if (dismissBtn && banner) {
+			dismissBtn.addEventListener('click', function(){
+			  banner.style.display = 'none';
+			  try{ localStorage.setItem('agentic_banner_dismissed','1'); }catch(e){}
+			});
+			
+		  }
+		  if (annClose && annBar) {
+			annClose.addEventListener('click', function(){ annBar.style.display='none'; try{localStorage.setItem('agentic_ann_dismissed','1')}catch(e){};});
+			try{ if(localStorage.getItem('agentic_ann_dismissed') === '1') annBar.style.display='none'; }catch(e){}
+		  }
+		})();
+	  </script>
 
 
 
