@@ -1080,8 +1080,8 @@ main > section,
 
 .operations-section__image {
   width: 100%;
-  height: 128px;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .operations-section__card-body {
@@ -1267,8 +1267,8 @@ main > section,
 
 .capability-columns-section__image {
   width: 100%;
-  height: 201px;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .capability-columns-section__body {
@@ -1411,8 +1411,8 @@ main > section,
 
 .company-brain-section__image {
   width: 100%;
-  height: 123px;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 820px) {
@@ -1480,8 +1480,8 @@ main > section,
 
 .clinical-data-section__image {
   width: 100%;
-  height: 225px;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .clinical-data-section__body {
@@ -1556,8 +1556,8 @@ main > section,
 
 .resource-cards-section__image {
   width: 100%;
-  height: 182px;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .resource-cards-section__body {
@@ -1657,8 +1657,9 @@ main > section,
   min-height: 140px;
   align-items: flex-end;
   border-radius: 6px;
-  color: #ffffff;
-  background: #8d8d8d;
+  color: #071018;
+  background: #ffffff;
+  border: 1px solid #dddddd;
 }
 
 .ai-workforce-section__card--triage {
@@ -1708,9 +1709,11 @@ main > section,
   content: "";
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.56),
-    rgba(0, 0, 0, 0.24)
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0.1) 100%
   );
+  pointer-events: none;
 }
 
 .ai-workforce-section__card--more::after {
@@ -1721,11 +1724,7 @@ main > section,
   position: relative;
   z-index: 1;
   width: 100%;
-  padding: 24px 23px;
-}
-
-.ai-workforce-section__card--small .ai-workforce-section__overlay {
-  padding: 14px 13px;
+  padding: 24px;
 }
 .ai-workforce-section__card-title,
 .ai-workforce-section__card-title--small {
@@ -1740,6 +1739,7 @@ main > section,
 .ai-workforce-section__text--small {
   max-width: 300px;
   margin: 19px 0 0;
+  color: #4c5661;
   font-size: var(--text-xs);
   line-height: 1.55;
 }
@@ -1758,11 +1758,12 @@ main > section,
   min-width: 52px;
   min-height: 25px;
   padding: 0 12px;
-  border: 1px solid rgba(255, 255, 255, 0.65);
+  border: 1px solid #071018;
   border-radius: 2px;
-  color: #ffffff;
+  color: #071018;
   font-size: var(--text-micro);
   line-height: 1;
+  transition: all 0.2s ease;
 }
 
 .ai-workforce-section__link {
@@ -1770,10 +1771,11 @@ main > section,
   align-items: center;
   gap: 8px;
   width: fit-content;
-  color: #ffffff;
+  color: #6f57ff;
   font-size: var(--text-micro);
   font-weight: var(--weight-semibold);
   line-height: 1;
+  transition: color 0.2s ease;
 }
 
 .ai-workforce-section__card--small .ai-workforce-section__link {
@@ -1781,15 +1783,20 @@ main > section,
 }
 
 .ai-workforce-section__button:hover,
-.ai-workforce-section__button:focus-visible,
+.ai-workforce-section__button:focus-visible {
+  border-color: #6f57ff;
+  background: #6f57ff;
+  color: #ffffff;
+}
+
 .ai-workforce-section__link:hover,
 .ai-workforce-section__link:focus-visible {
-  color: #dcd7ff;
+  color: #553cff;
 }
 
 .ai-workforce-section__button:focus-visible,
 .ai-workforce-section__link:focus-visible {
-  outline: 2px solid #ffffff;
+  outline: 2px solid #6f57ff;
   outline-offset: 4px;
 }
 
@@ -1952,7 +1959,7 @@ main > section,
 }
 
 .communication-section__row + .communication-section__row {
-  margin-top: 80px;
+  margin-top: 0;
 }
 
 .communication-section__content {
@@ -2039,11 +2046,10 @@ main > section,
 .communication-section__media {
   grid-column: 3;
   margin-right: var(--page-padding);
-  height: 300px;
+  height: 100%;
   background: #dcdcdc;
   border-radius: 6px;
   overflow: hidden;
-  align-self: center;
 }
 
 .communication-section__image {
@@ -2076,7 +2082,7 @@ main > section,
   }
 
   .communication-section__row + .communication-section__row {
-    margin-top: 60px;
+    margin-top: 0;
   }
 
   .communication-section__content {
