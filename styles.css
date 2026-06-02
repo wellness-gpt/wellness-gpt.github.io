@@ -152,7 +152,7 @@ main > section,
 }
 
 .site-header__nav-link {
-  font-size: var(--text-lg);
+  font-size: var(--text-sm);
   font-weight: var(--weight-regular);
   line-height: 1;
   color: #050505;
@@ -265,7 +265,7 @@ main > section,
     padding: 0 2px;
     border-bottom: 1px solid #eeeeee;
     border-radius: 8px;
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
     font-weight: var(--weight-regular);
     text-align: center;
   }
@@ -799,7 +799,7 @@ main > section,
 .company-logos-section {
   width: 100%;
   padding: 80px var(--page-padding);
-  background: #f3f3f3;
+  background: #f6f6ff;
 }
 
 .company-logos-section__grid {
@@ -1036,7 +1036,7 @@ main > section,
 .operations-section {
   width: 100%;
   padding: 80px var(--page-padding);
-  background: #f3f3f3;
+  background: #f6f6ff;
 }
 
 .operations-section__header {
@@ -1240,7 +1240,7 @@ main > section,
 .capability-columns-section {
   width: 100%;
   padding: 80px var(--page-padding);
-  background: #f3f3f3;
+  background: #f6f6ff;
 }
 
 .capability-columns-section__inner {
@@ -1434,7 +1434,7 @@ main > section,
 .clinical-data-section {
   width: 100%;
   padding: 80px var(--page-padding);
-  background: #f3f3f3;
+  background: #f6f6ff;
 }
 
 .clinical-data-section__header {
@@ -1607,7 +1607,7 @@ main > section,
 .ai-workforce-section {
   width: 100%;
   padding: 80px var(--page-padding);
-  background: #f3f3f3;
+  background: #f6f6ff;
 }
 
 .ai-workforce-section__header {
@@ -1944,7 +1944,7 @@ main > section,
 .communication-section {
   width: 100%;
   padding: 80px 0;
-  background: #f3f3f3;
+  background: #f6f6ff;
 }
 
 .communication-section__row {
@@ -2345,7 +2345,7 @@ main > section,
   width: 100%;
   padding: 80px var(--page-padding);
   text-align: center;
-  background: #f3f3f3;
+  background: #f6f6ff;
 }
 
 @media (max-width: 760px) {
@@ -2474,11 +2474,56 @@ main > section,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 10px;
-  min-height: 18px;
-  font-size: var(--text-sm);
-  font-weight: var(--weight-bold);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  color: #071018;
   line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.site-footer__social a:hover,
+.site-footer__social a:focus-visible {
+  background: #6f57ff;
+  color: #ffffff;
+}
+
+.site-footer__social-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+/* Optical alignment for social icons to ensure visual weight uniformity */
+.site-footer__social a[aria-label="Facebook"] .site-footer__social-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.site-footer__social a[aria-label="Instagram"] .site-footer__social-icon {
+  width: 13.5px;
+  height: 13.5px;
+}
+
+.site-footer__social a[aria-label="X"] .site-footer__social-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.site-footer__social a[aria-label="LinkedIn"] .site-footer__social-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.site-footer__social a[aria-label="YouTube"] .site-footer__social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.site-footer__social a:hover .site-footer__social-icon {
+  transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
@@ -2536,3 +2581,29 @@ main > section,
   }
 }
 
+/* --- SCROLL REVEAL ANIMATIONS --- */
+.reveal-element {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+/* Stagger delay logic */
+.reveal-element[style*="--stagger-index"] {
+  transition-delay: calc(var(--stagger-index) * 80ms);
+}
+
+.reveal-element.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-element {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

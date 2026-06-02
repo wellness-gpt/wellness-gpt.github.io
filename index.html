@@ -12,11 +12,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "WellnessGPT",
+      "url": "https://www.wellness-gpt.com",
+      "logo": "https://www.wellness-gpt.com/assets/logo.png",
+      "sameAs": [
+        "https://twitter.com/HeyDoc_Ai",
+        "https://www.facebook.com/heydoc.co.in/",
+        "https://www.instagram.com/heydoc_ai",
+        "https://in.linkedin.com/company/heydoc-healthtech",
+        "https://youtube.com/@heydocai"
+      ]
+    }
+    </script>
   </head>
   <body>
     <!-- Header -->
     <header class="site-header">
-      <a class="site-header__brand" href="/" aria-label="WellnessGPT home">
+      <a class="site-header__brand" href="https://www.wellness-gpt.com" aria-label="WellnessGPT home">
         <img
           class="site-header__logo"
           src="assets/logo.png"
@@ -41,10 +57,13 @@
         id="primary-navigation"
         aria-label="Primary navigation"
       >
-        <a class="site-header__nav-link" href="#platform">Platform</a>
-        <a class="site-header__nav-link" href="#agents">Agents</a>
-        <a class="site-header__nav-link" href="#solutions">Solutions</a>
-        <a class="site-header__cta" href="#contact">Talk with our team</a>
+        <a class="site-header__nav-link" href="https://heydoc.co.in">Patients</a>
+        <a class="site-header__nav-link" href="https://heydoc.co.in/hospital.html">Doctors</a>
+        <a class="site-header__nav-link" href="https://heydoc.co.in/hospital.html">Hospitals</a>
+        <a class="site-header__nav-link" href="https://heydoc.co.in/abdm.html">ABDM</a>
+        <a class="site-header__nav-link" href="https://heydoc.co.in/abdm.html">Security</a>
+        <a class="site-header__nav-link" href="https://forms.gle/ovwj9HLPMaPL4sgh6">Contact Us</a>
+        <a class="site-header__cta" href="https://forms.gle/ovwj9HLPMaPL4sgh6">Talk with our team</a>
       </nav>
     </header>
 
@@ -64,7 +83,7 @@
         </div>
 
         <div class="hero-section__summary">
-          <a class="hero-section__cta" href="#contact">Talk with our team</a>
+          <a class="hero-section__cta" href="https://forms.gle/ovwj9HLPMaPL4sgh6">Talk with our team</a>
 
           <p class="hero-section__description">
             Stop deploying disconnected chatbots. Unify clinical, operational,
@@ -761,7 +780,7 @@ agent = create_agent(
         </div>
 
         <p class="integrations-section__note">
-          Other framework? <a href="#contact">Drop us a line.</a>
+          Other framework? <a href="https://forms.gle/ovwj9HLPMaPL4sgh6">Drop us a line.</a>
         </p>
       </section>
 
@@ -952,7 +971,7 @@ agent = create_agent(
           highly defensive, scalable, AI-native healthcare operations.
         </p>
         <div class="final-cta-section__actions">
-          <a class="hero-section__cta" href="#contact">
+          <a class="hero-section__cta" href="https://forms.gle/ovwj9HLPMaPL4sgh6">
             Schedule an Executive Briefing
           </a>
         </div>
@@ -1007,11 +1026,37 @@ agent = create_agent(
         </div>
 
         <div class="site-footer__social" aria-label="Social links">
-          <a href="#facebook" aria-label="Facebook">f</a>
-          <a href="#instagram" aria-label="Instagram">&#9678;</a>
-          <a href="#x" aria-label="X">X</a>
-          <a href="#linkedin" aria-label="LinkedIn">in</a>
-          <a href="#youtube" aria-label="YouTube">&#9654;</a>
+          <a href="https://www.facebook.com/heydoc.co.in/" aria-label="Facebook">
+            <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/heydoc_ai" aria-label="Instagram">
+            <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://twitter.com/HeyDoc_Ai" aria-label="X">
+            <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+            </svg>
+          </a>
+          <a href="https://in.linkedin.com/company/heydoc-healthtech" aria-label="LinkedIn">
+            <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://youtube.com/@heydocai" aria-label="YouTube">
+            <svg class="site-footer__social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+          </a>
         </div>
       </div>
 
