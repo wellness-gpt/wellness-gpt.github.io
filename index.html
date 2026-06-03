@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WellnessGPT</title>
     <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
     {
@@ -34,10 +28,11 @@
     <header class="site-header">
       <a class="site-header__brand" href="https://www.wellness-gpt.com" aria-label="WellnessGPT home">
         <img
-          class="site-header__logo"
+          class="site-header__logo-icon"
           src="assets/logo.png"
-          alt="WellnessGPT"
+          alt=""
         />
+        <span class="site-header__brand-text">WellnessGPT</span>
       </a>
 
       <button
@@ -93,97 +88,308 @@
           </p>
         </div>
 
-        <div class="hero-section__media">
-          <span class="hero-section__notch hero-section__notch--top" aria-hidden="true"></span>
-          <span class="hero-section__notch hero-section__notch--left" aria-hidden="true"></span>
-          <span class="hero-section__notch hero-section__notch--right" aria-hidden="true"></span>
-          <div
-            class="hero-section__image hero-section__animation hero-flow"
-            role="img"
-            aria-label="Animated diagram showing files flowing through internal agents and an AI brain to external agents and consumers"
-          >
-            <svg class="hero-flow__svg" viewBox="0 -15 1150 520" aria-hidden="true">
+          <div class="hero-flow">
+            <svg class="hero-flow__svg" viewBox="68 0 1184 450" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <marker
-                  id="hero-arrow"
-                  viewBox="0 0 10 10"
-                  refX="9"
-                  refY="5"
-                  markerWidth="6"
-                  markerHeight="6"
-                  orient="auto-start-reverse"
-                >
-                  <path d="M 0 0 L 10 5 L 0 10 z" />
+                <!-- Shadow Filter for nodes -->
+                <filter id="hero-shadow" x="-20%" y="-20%" width="140%" height="140%">
+                  <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.06" />
+                </filter>
+                
+                <!-- Arrow Marker -->
+                <marker id="hero-arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#a8a5b5" />
                 </marker>
               </defs>
 
-              <g class="hero-flow__connections">
-                <path id="hero-l1" class="hero-flow__link" d="M227 150 H260 V120 H345" />
-                <path id="hero-l2" class="hero-flow__link" d="M227 240 H345" />
-                <path id="hero-l3" class="hero-flow__link" d="M227 330 H260 V360 H345" />
-                <path id="hero-p1b" class="hero-flow__link" d="M388 120 H465 V240 H520" />
-                <path id="hero-p2b" class="hero-flow__link" d="M388 240 H520" />
-                <path id="hero-p3b" class="hero-flow__link" d="M388 360 H465 V240 H520" />
-                <path id="hero-b1" class="hero-flow__link hero-flow__link--desktop-right" d="M634 240 H710 V120 H766" />
-                <path id="hero-b2" class="hero-flow__link hero-flow__link--desktop-right" d="M634 240 H766" />
-                <path id="hero-b3" class="hero-flow__link hero-flow__link--desktop-right" d="M634 240 H710 V360 H766" />
-                <path id="hero-a1" class="hero-flow__link hero-flow__link--arrow hero-flow__link--desktop-right" d="M809 120 H945" />
-                <path id="hero-a2" class="hero-flow__link hero-flow__link--arrow hero-flow__link--desktop-right" d="M809 240 H945" />
-                <path id="hero-a3" class="hero-flow__link hero-flow__link--arrow hero-flow__link--desktop-right" d="M809 360 H945" />
-                <path id="hero-mobile-b1" class="hero-flow__link hero-flow__link--mobile-right" d="M634 240 H710 V120 H766" />
-                <path id="hero-mobile-b2" class="hero-flow__link hero-flow__link--mobile-right" d="M634 240 H766" />
-                <path id="hero-mobile-b3" class="hero-flow__link hero-flow__link--mobile-right" d="M634 240 H710 V360 H766" />
-                <path class="hero-flow__link hero-flow__link--arrow hero-flow__link--mobile-right" d="M809 120 H945" />
-                <path class="hero-flow__link hero-flow__link--arrow hero-flow__link--mobile-right" d="M809 240 H945" />
-                <path class="hero-flow__link hero-flow__link--arrow hero-flow__link--mobile-right" d="M809 360 H945" />
+              <!-- COLUMN HEADERS -->
+              <!-- Desktop Column Headers -->
+              <text class="hero-flow__column-header hero-flow__column-header--blue hero-flow__desktop-only" x="380" y="22" text-anchor="middle">
+                <tspan x="380" dy="0">INTERNAL</tspan>
+                <tspan x="380" dy="14">AGENTS</tspan>
+              </text>
+              <text class="hero-flow__column-header hero-flow__column-header--purple hero-flow__desktop-only" x="840" y="22" text-anchor="middle">
+                <tspan x="840" dy="0">CONSUMER</tspan>
+                <tspan x="840" dy="14">AGENTS</tspan>
+              </text>
+
+              <!-- CONNECTIONS: Hospitals to Internal Agents -->
+              <path id="path-hosp-1" d="M 267 90 L 356 90" class="hero-flow__link" />
+              <path id="path-hosp-2" d="M 267 180 L 356 180" class="hero-flow__link" />
+              <path id="path-hosp-3" d="M 267 270 L 356 270" class="hero-flow__link" />
+              <path id="path-hosp-4" d="M 267 360 L 356 360" class="hero-flow__link" />
+
+              <!-- CONNECTIONS: Internal Agents to Brain (Converging) -->
+              <!-- Invisible motion paths for Left Packets (animating all the way into the brain) -->
+              <path id="path-agent-1" d="M 404 90 L 480 90 Q 490 90, 490 100 L 490 215 Q 490 225, 500 225 L 570 225" fill="none" stroke="none" />
+              <path id="path-agent-2" d="M 404 180 L 480 180 Q 490 180, 490 190 L 490 215 Q 490 225, 500 225 L 570 225" fill="none" stroke="none" />
+              <path id="path-agent-3" d="M 404 270 L 480 270 Q 490 270, 490 260 L 490 235 Q 490 225, 500 225 L 570 225" fill="none" stroke="none" />
+              <path id="path-agent-4" d="M 404 360 L 480 360 Q 490 360, 490 350 L 490 235 Q 490 225, 500 225 L 570 225" fill="none" stroke="none" />
+
+              <!-- Visible drawing paths for Left connections (meeting rectilinear at x=490) -->
+              <path d="M 404 90 L 480 90 Q 490 90, 490 100 L 490 215 Q 490 225, 500 225 L 510 225" class="hero-flow__link" />
+              <path d="M 404 180 L 480 180 Q 490 180, 490 190 L 490 215 Q 490 225, 500 225 L 510 225" class="hero-flow__link" />
+              <path d="M 404 270 L 480 270 Q 490 270, 490 260 L 490 235 Q 490 225, 500 225 L 510 225" class="hero-flow__link" />
+              <path d="M 404 360 L 480 360 Q 490 360, 490 350 L 490 235 Q 490 225, 500 225 L 510 225" class="hero-flow__link" />
+              <path d="M 510 225 L 570 225" class="hero-flow__link" />
+
+              <!-- CONNECTIONS: Brain to External Agents (Diverging) -->
+              <!-- Invisible motion paths for Right Packets (animating all the way from the brain) -->
+              <path id="path-brain-1" d="M 710 225 L 740 225 Q 750 225, 750 215 L 750 100 Q 750 90, 760 90 L 816 90" fill="none" stroke="none" />
+              <path id="path-brain-2" d="M 710 225 L 816 225" fill="none" stroke="none" />
+              <path id="path-brain-3" d="M 710 225 L 740 225 Q 750 225, 750 235 L 750 350 Q 750 360, 760 360 L 816 360" fill="none" stroke="none" />
+
+              <!-- Visible drawing paths for Right connections (separating from split point at x=740) -->
+              <path d="M 710 225 L 740 225" class="hero-flow__link" />
+              <path d="M 740 225 Q 750 225, 750 215 L 750 100 Q 750 90, 760 90 L 816 90" class="hero-flow__link" />
+              <path d="M 740 225 L 816 225" class="hero-flow__link" />
+              <path d="M 740 225 Q 750 225, 750 235 L 750 350 Q 750 360, 760 360 L 816 360" class="hero-flow__link" />
+
+              <!-- CONNECTIONS: External Agents to Modalities -->
+              <path id="path-ext-1" d="M 864 90 L 940 90" class="hero-flow__link" />
+              <path id="path-ext-2" d="M 864 225 L 940 225" class="hero-flow__link" />
+              <path id="path-ext-3" d="M 864 360 L 940 360" class="hero-flow__link" />
+
+              <!-- CONNECTIONS: Modalities to Users -->
+              <path id="path-mod-1" d="M 980 90 L 1025 90" class="hero-flow__link hero-flow__link--arrow" />
+              <path id="path-mod-2" d="M 980 225 L 1025 225" class="hero-flow__link hero-flow__link--arrow" />
+              <path id="path-mod-3" d="M 980 360 L 1025 360" class="hero-flow__link hero-flow__link--arrow" />
+
+
+
+              <!-- ANIMATED PACKETS -->
+              <!-- Left Packets: Hospitals -> Agents (#60b3f7 - Blue) -->
+              <circle r="4" class="hero-flow__packet hero-flow__packet--blue">
+                <animateMotion dur="3.5s" repeatCount="indefinite">
+                  <mpath href="#path-hosp-1" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--blue">
+                <animateMotion dur="4.2s" repeatCount="indefinite">
+                  <mpath href="#path-hosp-2" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--blue">
+                <animateMotion dur="3.8s" repeatCount="indefinite">
+                  <mpath href="#path-hosp-3" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--blue">
+                <animateMotion dur="4.5s" repeatCount="indefinite">
+                  <mpath href="#path-hosp-4" />
+                </animateMotion>
+              </circle>
+
+              <!-- Left Packets: Agents -> Brain (#60b3f7 - Blue) -->
+              <circle r="4" class="hero-flow__packet hero-flow__packet--blue">
+                <animateMotion dur="4s" repeatCount="indefinite">
+                  <mpath href="#path-agent-1" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--blue">
+                <animateMotion dur="4.8s" repeatCount="indefinite">
+                  <mpath href="#path-agent-2" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--blue">
+                <animateMotion dur="4.3s" repeatCount="indefinite">
+                  <mpath href="#path-agent-3" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--blue">
+                <animateMotion dur="5s" repeatCount="indefinite">
+                  <mpath href="#path-agent-4" />
+                </animateMotion>
+              </circle>
+
+              <!-- Right Packets: Brain -> Consumer Agents (#96f2e9 - Cyan) -->
+              <circle r="4" class="hero-flow__packet hero-flow__packet--cyan">
+                <animateMotion dur="4.2s" repeatCount="indefinite">
+                  <mpath href="#path-brain-1" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--cyan">
+                <animateMotion dur="3.8s" repeatCount="indefinite">
+                  <mpath href="#path-brain-2" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--cyan">
+                <animateMotion dur="4.5s" repeatCount="indefinite">
+                  <mpath href="#path-brain-3" />
+                </animateMotion>
+              </circle>
+
+              <!-- Right Packets: Consumer Agents -> Modalities (#9d8ae6 - Purple) -->
+              <circle r="4" class="hero-flow__packet hero-flow__packet--purple">
+                <animateMotion dur="3.2s" repeatCount="indefinite">
+                  <mpath href="#path-ext-1" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--purple">
+                <animateMotion dur="2.8s" repeatCount="indefinite">
+                  <mpath href="#path-ext-2" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--purple">
+                <animateMotion dur="3.5s" repeatCount="indefinite">
+                  <mpath href="#path-ext-3" />
+                </animateMotion>
+              </circle>
+
+              <!-- Right Packets: Modalities -> Users (#9d8ae6 - Purple) -->
+              <circle r="4" class="hero-flow__packet hero-flow__packet--purple">
+                <animateMotion dur="2.5s" repeatCount="indefinite">
+                  <mpath href="#path-mod-1" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--purple">
+                <animateMotion dur="2.2s" repeatCount="indefinite">
+                  <mpath href="#path-mod-2" />
+                </animateMotion>
+              </circle>
+              <circle r="4" class="hero-flow__packet hero-flow__packet--purple">
+                <animateMotion dur="2.8s" repeatCount="indefinite">
+                  <mpath href="#path-mod-3" />
+                </animateMotion>
+              </circle>
+
+              <!-- NODES: LEFT COLUMN 1 (Labels) -->
+              <g class="hero-flow__pill-group hero-flow__pill--row1">
+                <rect x="70" y="72" width="130" height="36" rx="18" fill="#ffffff" stroke="#dddddd" stroke-width="1" filter="url(#hero-shadow)" />
+                <text x="135" y="94" text-anchor="middle" class="hero-flow__pill-text">Hospital chains</text>
+              </g>
+              <g class="hero-flow__pill-group hero-flow__pill--row2">
+                <rect x="70" y="162" width="130" height="36" rx="18" fill="#ffffff" stroke="#dddddd" stroke-width="1" filter="url(#hero-shadow)" />
+                <text x="135" y="184" text-anchor="middle" class="hero-flow__pill-text">Health insurance</text>
+              </g>
+              <g class="hero-flow__pill-group hero-flow__pill--row1">
+                <rect x="70" y="252" width="130" height="36" rx="18" fill="#ffffff" stroke="#dddddd" stroke-width="1" filter="url(#hero-shadow)" />
+                <text x="135" y="274" text-anchor="middle" class="hero-flow__pill-text">Preventive care</text>
+              </g>
+              <g class="hero-flow__pill-group hero-flow__pill--row2">
+                <rect x="70" y="342" width="130" height="36" rx="18" fill="#ffffff" stroke="#dddddd" stroke-width="1" filter="url(#hero-shadow)" />
+                <text x="135" y="364" text-anchor="middle" class="hero-flow__pill-text">Digital Health</text>
               </g>
 
-              <g class="hero-flow__nodes">
-                <image href="assets/files.png" x="98" y="98" width="44" height="44" />
-                <image href="assets/files.png" x="98" y="178" width="44" height="44" />
-                <image href="assets/files.png" x="98" y="258" width="44" height="44" />
-                <image href="assets/files.png" x="98" y="338" width="44" height="44" />
-                <image href="assets/files.png" x="183" y="128" width="44" height="44" />
-                <image href="assets/files.png" x="183" y="218" width="44" height="44" />
-                <image href="assets/files.png" x="183" y="308" width="44" height="44" />
-
-                <image href="assets/internal-agent.png" x="345" y="98.5" width="43" height="43" />
-                <image href="assets/internal-agent.png" x="345" y="218.5" width="43" height="43" />
-                <image href="assets/internal-agent.png" x="345" y="338.5" width="43" height="43" />
-
-                <g class="hero-flow__brain">
-                  <image href="assets/brain.png" x="520" y="171" width="114" height="114" />
-                  <text class="hero-flow__brain-label hero-flow__brain-label--desktop" x="577" y="320">BRAIN</text>
-                  <text class="hero-flow__brain-label hero-flow__brain-label--mobile" x="665" y="246">BRAIN</text>
-                </g>
-
-                <image href="assets/external-agent.png" x="766" y="98.5" width="43" height="43" />
-                <image href="assets/external-agent.png" x="766" y="218.5" width="43" height="43" />
-                <image href="assets/external-agent.png" x="766" y="338.5" width="43" height="43" />
-
-                <image href="assets/consumer.png" x="965" y="94" width="32" height="32" />
-                <image href="assets/consumer.png" x="965" y="174" width="32" height="32" />
-                <image href="assets/consumer.png" x="965" y="254" width="32" height="32" />
-                <image href="assets/consumer.png" x="965" y="334" width="32" height="32" />
+              <!-- NODES: LEFT COLUMN 2 (Hospitals) -->
+              <g class="hero-flow__hospital-icon">
+                <circle cx="245" cy="90" r="22" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/hospital.png" x="227" y="72" width="36" height="36" />
+              </g>
+              <g class="hero-flow__hospital-icon">
+                <circle cx="245" cy="180" r="22" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/hospital.png" x="227" y="162" width="36" height="36" />
+              </g>
+              <g class="hero-flow__hospital-icon">
+                <circle cx="245" cy="270" r="22" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/hospital.png" x="227" y="252" width="36" height="36" />
+              </g>
+              <g class="hero-flow__hospital-icon">
+                <circle cx="245" cy="360" r="22" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/hospital.png" x="227" y="342" width="36" height="36" />
               </g>
 
-              <g class="hero-flow__packets">
-                <circle r="4" class="hero-flow__packet hero-flow__packet--blue"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#hero-l1" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--blue"><animateMotion dur="3s" begin="1s" repeatCount="indefinite"><mpath href="#hero-l2" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--blue"><animateMotion dur="3s" begin="2s" repeatCount="indefinite"><mpath href="#hero-l3" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--cyan"><animateMotion dur="2.5s" repeatCount="indefinite"><mpath href="#hero-p1b" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--cyan"><animateMotion dur="2.5s" begin=".8s" repeatCount="indefinite"><mpath href="#hero-p2b" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--cyan"><animateMotion dur="2.5s" begin="1.6s" repeatCount="indefinite"><mpath href="#hero-p3b" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--orange hero-flow__packet--desktop-right"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#hero-b1" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--orange hero-flow__packet--desktop-right"><animateMotion dur="2s" begin=".7s" repeatCount="indefinite"><mpath href="#hero-b2" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--orange hero-flow__packet--desktop-right"><animateMotion dur="2s" begin="1.4s" repeatCount="indefinite"><mpath href="#hero-b3" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--orange hero-flow__packet--mobile-right"><animateMotion dur="2s" repeatCount="indefinite"><mpath href="#hero-mobile-b1" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--orange hero-flow__packet--mobile-right"><animateMotion dur="2s" begin=".7s" repeatCount="indefinite"><mpath href="#hero-mobile-b2" /></animateMotion></circle>
-                <circle r="4" class="hero-flow__packet hero-flow__packet--orange hero-flow__packet--mobile-right"><animateMotion dur="2s" begin="1.4s" repeatCount="indefinite"><mpath href="#hero-mobile-b3" /></animateMotion></circle>
+              <!-- NODES: LEFT COLUMN 3 (Internal Agents) -->
+              <image href="assets/internal-agent.png" x="356" y="66" width="48" height="48" filter="url(#hero-shadow)" />
+              <image href="assets/internal-agent.png" x="356" y="156" width="48" height="48" filter="url(#hero-shadow)" />
+              <image href="assets/internal-agent.png" x="356" y="246" width="48" height="48" filter="url(#hero-shadow)" />
+              <image href="assets/internal-agent.png" x="356" y="336" width="48" height="48" filter="url(#hero-shadow)" />
+
+              <!-- CENTER: BRAIN -->
+              <g>
+                <image href="assets/brain.png" x="570" y="155" width="140" height="140" />
+                <!-- Desktop Brain Title -->
+                <text class="hero-flow__brain-title hero-flow__desktop-only" x="640" y="322" text-anchor="middle" font-family="var(--font-sans)" font-size="14px" font-weight="700" fill="#6b4ce6" letter-spacing="6px">BRAIN</text>
+              </g>
+
+              <!-- NODES: RIGHT COLUMN 1 (External Agents) -->
+              <image href="assets/external-agent.png" x="816" y="66" width="48" height="48" filter="url(#hero-shadow)" />
+              <image href="assets/external-agent.png" x="816" y="201" width="48" height="48" filter="url(#hero-shadow)" />
+              <image href="assets/external-agent.png" x="816" y="336" width="48" height="48" filter="url(#hero-shadow)" />
+
+              <!-- NODES: RIGHT COLUMN 2 (Modalities) -->
+              <g class="hero-flow__modality-icon">
+                <circle cx="960" cy="90" r="20" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/text.png" x="946" y="76" width="28" height="28" />
+              </g>
+              <g class="hero-flow__modality-icon">
+                <circle cx="960" cy="225" r="20" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/audio.png" x="946" y="211" width="28" height="28" />
+              </g>
+              <g class="hero-flow__modality-icon">
+                <circle cx="960" cy="360" r="20" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/video.png" x="946" y="346" width="28" height="28" />
+              </g>
+
+              <!-- NODES: RIGHT COLUMN 3 (Users) -->
+              <g class="hero-flow__user-icon">
+                <circle cx="1080" cy="90" r="22" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/consumer.png" x="1062" y="72" width="36" height="36" />
+              </g>
+              <g class="hero-flow__user-icon">
+                <circle cx="1080" cy="158" r="22" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/consumer.png" x="1062" y="140" width="36" height="36" />
+              </g>
+              <g class="hero-flow__user-icon">
+                <circle cx="1080" cy="225" r="22" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/consumer.png" x="1062" y="207" width="36" height="36" />
+              </g>
+              <g class="hero-flow__user-icon">
+                <circle cx="1080" cy="292" r="22" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/consumer.png" x="1062" y="274" width="36" height="36" />
+              </g>
+              <g class="hero-flow__user-icon">
+                <circle cx="1080" cy="360" r="22" fill="#ffffff" stroke="#e6e8eb" stroke-width="1" filter="url(#hero-shadow)" />
+                <image href="assets/consumer.png" x="1062" y="342" width="36" height="36" />
+              </g>
+
+              <!-- NODES: RIGHT COLUMN 4 (User Labels) -->
+              <g class="hero-flow__pill-group hero-flow__pill--row1">
+                <rect x="1140" y="74" width="110" height="32" rx="16" fill="#ffffff" stroke="#dddddd" stroke-width="1" filter="url(#hero-shadow)" />
+                <text x="1195" y="94" text-anchor="middle" class="hero-flow__pill-text">User</text>
+              </g>
+              <g class="hero-flow__pill-group hero-flow__pill--row2">
+                <rect x="1140" y="142" width="110" height="32" rx="16" fill="#ffffff" stroke="#dddddd" stroke-width="1" filter="url(#hero-shadow)" />
+                <text x="1195" y="162" text-anchor="middle" class="hero-flow__pill-text">उपयोगकर्ता</text>
+              </g>
+              <g class="hero-flow__pill-group hero-flow__pill--row1">
+                <rect x="1140" y="209" width="110" height="32" rx="16" fill="#ffffff" stroke="#dddddd" stroke-width="1" filter="url(#hero-shadow)" />
+                <text x="1195" y="229" text-anchor="middle" class="hero-flow__pill-text">Utilisateur</text>
+              </g>
+              <g class="hero-flow__pill-group hero-flow__pill--row2">
+                <rect x="1140" y="276" width="110" height="32" rx="16" fill="#ffffff" stroke="#dddddd" stroke-width="1" filter="url(#hero-shadow)" />
+                <text x="1195" y="296" text-anchor="middle" class="hero-flow__pill-text" style="font-size: 17px;">مستخدم</text>
+              </g>
+              <g class="hero-flow__pill-group hero-flow__pill--row1">
+                <rect x="1140" y="344" width="110" height="32" rx="16" fill="#ffffff" stroke="#dddddd" stroke-width="1" filter="url(#hero-shadow)" />
+                <text x="1195" y="364" text-anchor="middle" class="hero-flow__pill-text">ユーザー</text>
+              </g>
+
+              <!-- Mobile Headers with Masking Backgrounds -->
+              <g class="hero-flow__mobile-only" transform="translate(450, 225) rotate(-90)">
+                <rect x="-65" y="-18" width="130" height="36" fill="#ffffff" />
+                <text text-anchor="middle" class="hero-flow__column-header hero-flow__column-header--blue" y="-7">
+                  <tspan x="0" dy="0">INTERNAL</tspan>
+                  <tspan x="0" dy="14">AGENTS</tspan>
+                </text>
+              </g>
+
+              <g class="hero-flow__mobile-only" transform="translate(750, 225) rotate(-90)">
+                <rect x="-40" y="-12" width="80" height="24" fill="#ffffff" />
+                <text text-anchor="middle" class="hero-flow__brain-title" y="5">
+                  <tspan x="0">BRAIN</tspan>
+                </text>
+              </g>
+
+              <g class="hero-flow__mobile-only" transform="translate(895, 225) rotate(-90)">
+                <rect x="-65" y="-18" width="130" height="36" fill="#ffffff" />
+                <text text-anchor="middle" class="hero-flow__column-header hero-flow__column-header--purple" y="-7">
+                  <tspan x="0" dy="0">CONSUMER</tspan>
+                  <tspan x="0" dy="14">AGENTS</tspan>
+                </text>
               </g>
             </svg>
           </div>
-        </div>
       </section>
 
       <!-- Company Logos -->
@@ -737,7 +943,7 @@
       </section>
 
       <!-- Integrations -->
-      <section class="integrations-section">
+      <!-- <section class="integrations-section">
         <p class="integrations-section__eyebrow">Integrations</p>
         <h2 class="integrations-section__title">
           Drops into the agent framework you already use.
@@ -782,7 +988,7 @@ agent = create_agent(
         <p class="integrations-section__note">
           Other framework? <a href="https://forms.gle/ovwj9HLPMaPL4sgh6">Drop us a line.</a>
         </p>
-      </section>
+      </section> -->
 
       <!-- Communication & Enterprise Healthcare -->
       <section class="communication-section">
@@ -830,7 +1036,7 @@ agent = create_agent(
       </section>
 
       <!-- Runtime Capabilities -->
-      <section class="runtime-capabilities-section">
+      <!-- <section class="runtime-capabilities-section">
         <div class="runtime-capabilities-section__inner">
           <div class="runtime-capabilities-section__content">
             <p class="runtime-capabilities-section__eyebrow">Capabilities</p>
@@ -960,7 +1166,8 @@ agent = create_agent(
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+
       <!-- Final CTA -->
       <section class="final-cta-section" id="contact">
         <h2 class="final-cta-section__title">
@@ -983,10 +1190,11 @@ agent = create_agent(
       <div class="site-footer__panel">
         <div class="site-footer__brand">
           <img
-            class="site-footer__brand-image"
+            class="site-footer__brand-icon"
             src="assets/logo.png"
-            alt="WellnessGPT"
+            alt=""
           />
+          <span class="site-footer__brand-text">WellnessGPT</span>
         </div>
 
         <nav class="site-footer__column" aria-label="Platform">
