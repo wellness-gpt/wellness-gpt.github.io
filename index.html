@@ -24,8 +24,12 @@
     </script>
   </head>
   <body>
-    <!-- Header -->
-    <header class="site-header">
+    <!-- Full Screen Vanta Background -->
+    <div id="vanta-bg"></div>
+
+    <div class="content-wrapper">
+      <!-- Header -->
+      <header class="site-header">
       <a class="site-header__brand" href="https://www.wellness-gpt.com" aria-label="WellnessGPT home">
         <img
           class="site-header__logo-icon"
@@ -105,7 +109,7 @@
               <!-- COLUMN HEADERS -->
               <!-- Desktop Column Headers -->
               <text class="hero-flow__column-header hero-flow__column-header--blue hero-flow__desktop-only" x="380" y="22" text-anchor="middle">
-                <tspan x="380" dy="0">INTERNAL</tspan>
+                <tspan x="380" dy="0">COMPANY</tspan>
                 <tspan x="380" dy="14">AGENTS</tspan>
               </text>
               <text class="hero-flow__column-header hero-flow__column-header--purple hero-flow__desktop-only" x="840" y="22" text-anchor="middle">
@@ -299,7 +303,10 @@
               <g>
                 <image href="assets/brain.png" x="570" y="155" width="140" height="140" />
                 <!-- Desktop Brain Title -->
-                <text class="hero-flow__brain-title hero-flow__desktop-only" x="640" y="322" text-anchor="middle" font-family="var(--font-sans)" font-size="14px" font-weight="700" fill="#6b4ce6" letter-spacing="6px">BRAIN</text>
+                <text class="hero-flow__brain-title hero-flow__desktop-only" x="643" y="315" text-anchor="middle" font-family="var(--font-sans)" font-size="14px" font-weight="700" fill="#6b4ce6" letter-spacing="6px">
+                  <tspan x="643" dy="0">COMPANY</tspan>
+                  <tspan x="643" dy="16">BRAIN</tspan>
+                </text>
               </g>
 
               <!-- NODES: RIGHT COLUMN 1 (External Agents) -->
@@ -375,9 +382,10 @@
               </g>
 
               <g class="hero-flow__mobile-only" transform="translate(750, 225) rotate(-90)">
-                <rect x="-40" y="-12" width="80" height="24" fill="#ffffff" />
-                <text text-anchor="middle" class="hero-flow__brain-title" y="5">
-                  <tspan x="0">BRAIN</tspan>
+                <rect x="-55" y="-18" width="110" height="36" fill="#ffffff" />
+                <text text-anchor="middle" class="hero-flow__brain-title" y="-7">
+                  <tspan x="3" dy="0">COMPANY</tspan>
+                  <tspan x="3" dy="14">BRAIN</tspan>
                 </text>
               </g>
 
@@ -1269,7 +1277,10 @@ agent = create_agent(
       </div>
 
     </footer>
+  </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

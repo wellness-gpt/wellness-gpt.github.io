@@ -131,10 +131,37 @@ function initScrollAnimations() {
   revealElements.forEach(el => observer.observe(el));
 }
 
+/* Vanta.js animated background */
+function initVantaBackground() {
+  const bgElement = document.querySelector("#vanta-bg");
+  if (bgElement && typeof VANTA !== 'undefined') {
+    window.vantaEffect = VANTA.DOTS({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xa17df8,
+      color2: 0xa17df8,
+      backgroundColor: 0xffffff,
+      size: 3.00,
+      spacing: 35.00,
+      showLines: false
+    });
+  }
+}
+
 // Initialize when DOM is ready
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initScrollAnimations);
+  document.addEventListener("DOMContentLoaded", () => {
+    initScrollAnimations();
+    initVantaBackground();
+  });
 } else {
   initScrollAnimations();
+  initVantaBackground();
 }
 
