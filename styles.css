@@ -238,6 +238,11 @@ main > section,
   outline-offset: 6px;
 }
 
+.site-header__nav-link--active {
+  color: #a17df8 !important;
+  font-weight: var(--weight-medium);
+}
+
 .site-header__menu-button:hover,
 .site-header__menu-button:focus-visible {
   color: #a17df8;
@@ -801,7 +806,7 @@ main > section,
 }
 
 .feature-showcase-section__content--wide {
-  padding: 34px 28px 34px 12px;
+  padding: 34px 28px 34px 48px;
 }
 
 .feature-showcase-section__title {
@@ -2504,4 +2509,9 @@ main > section,
     transform: none !important;
     transition: none !important;
   }
+}
+
+/* Page 2 spacing override for first section below header */
+.content-wrapper > .ai-workforce-section:first-of-type {
+  padding-top: 130px;
 }

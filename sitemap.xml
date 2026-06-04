@@ -6,5 +6,10 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- Add other active URLs -->
+  <url>
+    <loc>https://www.wellness-gpt.com/consumer.html</loc>
+    <lastmod>2026-06-04T16:00:00+05:30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
