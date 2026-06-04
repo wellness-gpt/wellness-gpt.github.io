@@ -151,6 +151,11 @@ function initVantaBackground() {
       spacing: 35.00,
       showLines: false
     });
+
+    // Immediately set the camera position to its target coordinates to skip the entry/fly-in animation
+    if (window.vantaEffect && window.vantaEffect.camera) {
+      window.vantaEffect.camera.position.set(0, 50, 350);
+    }
   }
 }
 

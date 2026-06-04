@@ -1085,13 +1085,17 @@ main > section,
 
 .intelligence-layer-section__media {
   width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  background: #ffffff;
+  overflow: hidden;
 }
 
 .intelligence-layer-section__image {
   width: 100%;
   height: auto;
+  display: block;
   object-fit: cover;
-  border-radius: 6px;
 }
 
 @media (max-width: 860px) {
@@ -1921,8 +1925,9 @@ main > section,
   grid-column: 3;
   margin-right: var(--page-padding);
   height: 100%;
-  background: #dcdcdc;
+  border: 1px solid #dddddd;
   border-radius: 6px;
+  background: #ffffff;
   overflow: hidden;
 }
 
