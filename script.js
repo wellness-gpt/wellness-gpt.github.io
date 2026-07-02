@@ -69,7 +69,13 @@ function initScrollAnimations() {
     ".clinical-data-section__grid",
     ".resource-cards-section__grid",
     ".ai-workforce-section__grid",
-    ".runtime-capabilities-section__grid"
+    ".runtime-capabilities-section__grid",
+    ".org-intelligence-section__chips-grid",
+    ".agent-consensus-section__flow",
+    ".executive-decisions-section__chips-grid",
+    ".org-memory-section__cards-grid",
+    ".continuous-learning-section__flow",
+    ".hierarchy-grid"
   ];
 
   staggerGrids.forEach(selector => {
@@ -101,7 +107,30 @@ function initScrollAnimations() {
     addReveal(media);
   });
 
-  // 7. Final CTA Section
+  // 7. New Story-driven Two-Column Sections
+  const storySections = [
+    ".org-intelligence-section",
+    ".executive-counterpart-section",
+    ".agent-consensus-section",
+    ".executive-decisions-section",
+    ".org-memory-section"
+  ];
+  storySections.forEach(selector => {
+    document.querySelectorAll(selector).forEach(el => {
+      const content = el.querySelector(`${selector}__content`);
+      const media = el.querySelector(`${selector}__media`);
+      if (content) addReveal(content);
+      if (media) addReveal(media);
+    });
+  });
+
+  // 8. Consumer Hero
+  const ceoCard = document.querySelector(".ceo-card");
+  if (ceoCard) addReveal(ceoCard);
+  const connectors = document.querySelector(".hierarchy-connectors");
+  if (connectors) addReveal(connectors);
+
+  // 9. Final CTA Section
   const finalCta = document.querySelector(".final-cta-section");
   if (finalCta) {
     const title = finalCta.querySelector(".final-cta-section__title");
