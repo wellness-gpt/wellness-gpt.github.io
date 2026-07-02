@@ -2770,6 +2770,12 @@ main > section,
   flex-shrink: 0;
 }
 
+.flow-arrow-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
 .agent-consensus-section__media {
   width: 100%;
   border: 1px solid var(--color-border);
@@ -3497,10 +3503,6 @@ main > section,
   .agent-card__desc,
   .agent-card__visual {
     height: auto;
-  }
-
-  .agent-card__visual {
-    height: 100px;
   }
 }
 
