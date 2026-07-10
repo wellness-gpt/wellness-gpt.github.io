@@ -188,14 +188,76 @@ function initVantaBackground() {
   }
 }
 
+/* Capability Card Image Carousel */
+function initCardCarousels() {
+  const containers = document.querySelectorAll(".capability-columns-section__image-container");
+
+  containers.forEach(container => {
+    const slider = container.querySelector(".capability-columns-section__image-slider");
+    const prevBtn = container.querySelector(".capability-columns-section__carousel-btn--prev");
+    const nextBtn = container.querySelector(".capability-columns-section__carousel-btn--next");
+
+    if (!slider || !prevBtn || !nextBtn) return;
+
+    const images = slider.querySelectorAll(".capability-columns-section__image");
+    if (images.length <= 1) return;
+
+    let currentIndex = 0;
+    let autoScrollInterval = null;
+
+    const updateSlider = (newIndex) => {
+      currentIndex = (newIndex + images.length) % images.length;
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    const startAutoScroll = () => {
+      stopAutoScroll();
+      autoScrollInterval = setInterval(() => {
+        updateSlider(currentIndex + 1);
+      }, 4500);
+    };
+
+    const stopAutoScroll = () => {
+      if (autoScrollInterval) {
+        clearInterval(autoScrollInterval);
+        autoScrollInterval = null;
+      }
+    };
+
+    // Initialize auto scroll
+    startAutoScroll();
+
+    // Reset auto-scroll timer when user interacts manually
+    prevBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      updateSlider(currentIndex - 1);
+      startAutoScroll();
+    });
+
+    nextBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      updateSlider(currentIndex + 1);
+      startAutoScroll();
+    });
+
+    // Pause on hover
+    container.addEventListener("mouseenter", stopAutoScroll);
+    container.addEventListener("mouseleave", startAutoScroll);
+  });
+}
+
 // Initialize when DOM is ready
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
     initScrollAnimations();
     initVantaBackground();
+    initCardCarousels();
   });
 } else {
   initScrollAnimations();
   initVantaBackground();
+  initCardCarousels();
 }
 
