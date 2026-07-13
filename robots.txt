@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+# Robots.txt file for WellnessGPT (wellness-gpt.com)
+
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.wellness-gpt.com
+
+# Sitemap Location
+Sitemap: https://www.wellness-gpt.com/sitemap.xml
