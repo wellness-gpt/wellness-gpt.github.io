@@ -445,20 +445,62 @@
       "hasDefinedTerm": [
         {
           "@type": "DefinedTerm",
-          "name": "Healthcare AI Agents",
-          "description": "Specialized, pre-trained artificial intelligence systems designed for specific healthcare workflows such as triage, care planning, follow-up monitoring, and claims assessment. WellnessGPT provides 15+ such agents, each domain-trained with medical reasoning capabilities.",
+          "name": "AI Health Assistant",
+          "description": "An AI health assistant is software that uses artificial intelligence to help people understand health information through natural conversations across digital channels such as web chat, messaging apps, and voice interactions. It can explain medical terminology, answer health-related questions, help interpret medical reports and health records, and provide educational information in plain language. An AI health assistant is designed to support understanding and organization of health information, not to diagnose medical conditions, prescribe treatment, or replace healthcare professionals.",
           "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
         },
         {
           "@type": "DefinedTerm",
-          "name": "Agentic Orchestration Engine",
-          "description": "A unified orchestration layer that safely coordinates multiple healthcare AI agents, integrates with EHR/HMIS systems, ensures compliance with clinical rules, maintains observability, and provides human-in-loop oversight for healthcare AI operations.",
+          "name": "Company Brain",
+          "description": "A Company Brain is a centralized AI knowledge layer that brings together an organization's information into a single system. Instead of requiring people or AI systems to search across multiple sources independently, it provides one place to retrieve information, maintain context, and support workflows using the organization's knowledge. In healthcare, a Company Brain enables patient interactions, hospital operations, and specialized healthcare agents to work from the same shared understanding regardless of which communication channel is being used.",
           "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
         },
         {
           "@type": "DefinedTerm",
           "name": "HealthMem",
-          "description": "HealthMem is WellnessGPT's Temporal Memory System - a FHIR-aligned, encrypted hybrid memory architecture combining Graph databases, Vector embeddings, and KV cache technologies. It enables sub-150ms recall and longitudinal user understanding across all healthcare AI agents.",
+          "description": "HealthMem is WellnessGPT's health memory system. It maintains relevant health context across conversations so information that has already been shared can be referenced again when it is useful in future interactions. Whether a user continues a conversation through WhatsApp, a voice call, or the web, HealthMem helps WellnessGPT build on previous context instead of starting every conversation from the beginning.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Agentic Orchestration Engine",
+          "description": "The Agentic Orchestration Engine is the system that coordinates multiple specialized AI agents to complete larger healthcare workflows. Rather than relying on a single AI system to perform every task, it determines which specialized agent should handle each responsibility, shares relevant context between them, and combines their outputs into one coordinated experience. This allows complex healthcare journeys to be managed through multiple agents while maintaining continuity throughout the workflow.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Specialized Healthcare Agents",
+          "description": "Specialized Healthcare Agents are AI agents designed to perform specific healthcare-related responsibilities instead of relying on one general-purpose assistant for every task. Different agents can focus on areas such as patient assistance, healthcare workflows, operational support, or information retrieval while working together through the Agentic Orchestration Engine. By combining specialized capabilities with shared context from HealthMem, they can contribute to larger healthcare processes without losing continuity.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Sub-150ms Recall",
+          "description": "Sub-150ms Recall refers to the time required for HealthMem to retrieve relevant contextual information during an interaction. Fast context retrieval allows WellnessGPT and specialized healthcare agents to continue conversations and workflows without noticeable delays, helping maintain a responsive experience across patient interactions and operational processes.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Sources Ingested",
+          "description": "A source is an individual body of information made available to the Company Brain. Sources can include structured datasets, documents, knowledge repositories, operational systems, or other organizational information that AI agents use to retrieve context and support healthcare workflows.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Flat-Headcount Margin Expansion",
+          "description": "Flat-headcount margin expansion refers to increasing operational capacity by automating repetitive and time-consuming work while allowing existing teams to focus on higher-value responsibilities. The operational impact depends on how WellnessGPT is deployed and which healthcare workflows are automated within an organization.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Multi-Agent Healthcare Workflows",
+          "description": "Rather than relying on a single AI assistant for every task, WellnessGPT coordinates specialized healthcare agents through the Agentic Orchestration Engine. Each agent performs a specific responsibility while sharing context through HealthMem, allowing larger healthcare workflows to function as one continuous process.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Omnichannel Continuity",
+          "description": "WellnessGPT is designed to support healthcare conversations across multiple communication channels, including WhatsApp, voice, and the web. HealthMem maintains relevant context across these interactions so conversations and workflows can continue without restarting whenever a user or healthcare professional switches channels.",
           "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
         },
         {
@@ -483,6 +525,86 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can AI explain my medical reports?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AI can help explain many types of medical reports by translating medical terminology into plain language and answering questions about the information in the document. With WellnessGPT, you can upload health records such as blood tests, imaging summaries, discharge summaries, prescriptions, and other clinical documents. The assistant explains medical terminology, describes what individual findings represent, and answers follow-up questions as part of an ongoing conversation. Whether you continue through WhatsApp, voice, or the web, WellnessGPT uses HealthMem to maintain relevant context while helping you better understand your health information. It is designed to improve understanding—not to diagnose medical conditions or replace a healthcare professional's interpretation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I understand my lab results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can upload your laboratory report and ask questions about the results in natural language. WellnessGPT explains the report in plain language and lets you continue asking follow-up questions until you understand the information. Instead of searching for medical terms individually, you can ask what a specific measurement represents, what an abbreviation means, why a particular test was performed, or request a simpler explanation of any section. Conversations can continue across supported channels, allowing you to revisit your reports whenever new questions arise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the best AI to understand my blood test?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Several AI assistants can help explain blood test reports, and the right choice depends on what you're looking for. WellnessGPT is designed specifically for healthcare conversations rather than general-purpose assistance. It focuses on explaining laboratory reports in plain language, answering follow-up questions, and maintaining relevant health context through HealthMem so future conversations can build on previous ones. If your goal is to have ongoing health conversations instead of isolated report explanations, WellnessGPT is built for that experience."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI help me with health questions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AI can help answer general health questions, explain medical terminology, provide educational information about conditions and medications, and help people better understand medical reports and health records. WellnessGPT is designed to support conversations across WhatsApp, voice, the web, and other supported communication channels, allowing you to ask questions wherever it's most convenient. It is intended to help people understand health information and prepare for conversations with healthcare professionals—not to replace professional medical evaluation, diagnosis, or treatment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to ask AI about my medical history?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI can be useful for discussing your medical history when the platform is designed to support healthcare conversations while maintaining clear boundaries around its role. WellnessGPT uses HealthMem to maintain relevant health context across conversations so previously shared information can be referenced when it helps answer future questions. This allows conversations to become more continuous over time while keeping the assistant focused on helping users understand health information rather than making medical decisions or diagnoses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI help me track my health over time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. AI can help maintain continuity across health conversations so previously shared information remains available when it becomes relevant in the future. With WellnessGPT, HealthMem maintains relevant health context across conversations, allowing discussions to build on previous reports, health records, and earlier questions instead of starting from the beginning each time. Whether you continue the conversation on WhatsApp, voice, or the web, WellnessGPT provides a more consistent healthcare experience over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this app remember my medical history?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. WellnessGPT uses HealthMem to maintain relevant health context across conversations. For example, you might upload a medical report during one conversation and return later with another health question. When appropriate, WellnessGPT can use previously shared context to continue the discussion without requiring you to repeat the same background information. This continuity extends across supported communication channels, helping create one ongoing healthcare conversation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's an AI health assistant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An AI health assistant is software that uses artificial intelligence to help people understand health information through natural conversations. It can explain medical terminology, answer health-related questions, interpret medical reports, and provide educational information through channels such as WhatsApp, voice interactions, and the web. WellnessGPT is an AI health assistant designed specifically for healthcare conversations. It combines medical report explanation, conversational health assistance, and HealthMem so conversations can continue over time while maintaining relevant health context."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can AI replace my doctor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. AI cannot replace a licensed healthcare professional for diagnosis, treatment, prescribing medications, or emergency medical care. WellnessGPT is designed to help people understand health information, explain medical reports, answer health-related questions, and prepare for conversations with healthcare professionals. Medical decisions should always be made with an appropriately qualified clinician."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the best app to ask health questions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single best app for every situation. Different AI assistants are designed for different purposes, depending on whether you need general information, productivity assistance, or healthcare-specific support. WellnessGPT is built specifically for healthcare conversations. It helps users understand medical reports, ask follow-up questions, continue conversations across WhatsApp, voice, and the web, and maintain relevant health context through HealthMem. For people looking for an AI assistant focused on understanding and managing health information over time, this healthcare-first approach provides a different experience from general-purpose AI assistants."
+          }
+        },
         {
           "@type": "Question",
           "name": "What is the WellnessGPT <> ClearMedi Agentic Hospital launch?",

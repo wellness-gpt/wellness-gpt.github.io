@@ -445,20 +445,62 @@
       "hasDefinedTerm": [
         {
           "@type": "DefinedTerm",
-          "name": "Healthcare AI Agents",
-          "description": "Specialized, pre-trained artificial intelligence systems designed for specific healthcare workflows such as patient triage, care planning, follow-up monitoring, and claims assessment. WellnessGPT provides 15+ such agents, each domain-trained with medical reasoning capabilities.",
+          "name": "AI Health Assistant",
+          "description": "An AI health assistant is software that uses artificial intelligence to help people understand health information through natural conversations across digital channels such as web chat, messaging apps, and voice interactions. It can explain medical terminology, answer health-related questions, help interpret medical reports and health records, and provide educational information in plain language. An AI health assistant is designed to support understanding and organization of health information, not to diagnose medical conditions, prescribe treatment, or replace healthcare professionals.",
           "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
         },
         {
           "@type": "DefinedTerm",
-          "name": "Agentic Orchestration Engine",
-          "description": "A unified orchestration layer that safely coordinates multiple healthcare AI agents, integrates with EHR/HMIS systems, ensures compliance with clinical rules, maintains observability, and provides human-in-loop oversight for healthcare AI operations.",
+          "name": "Company Brain",
+          "description": "A Company Brain is a centralized AI knowledge layer that brings together an organization's information into a single system. Instead of requiring people or AI systems to search across multiple sources independently, it provides one place to retrieve information, maintain context, and support workflows using the organization's knowledge. In healthcare, a Company Brain enables patient interactions, hospital operations, and specialized healthcare agents to work from the same shared understanding regardless of which communication channel is being used.",
           "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
         },
         {
           "@type": "DefinedTerm",
           "name": "HealthMem",
-          "description": "HealthMem is WellnessGPT's Temporal Memory System - a FHIR-aligned, encrypted hybrid memory architecture combining Graph databases, Vector embeddings, and KV cache technologies. It enables sub-150ms recall and longitudinal patient understanding across all healthcare AI agents.",
+          "description": "HealthMem is WellnessGPT's health memory system. It maintains relevant health context across conversations so information that has already been shared can be referenced again when it is useful in future interactions. Whether a user continues a conversation through WhatsApp, a voice call, or the web, HealthMem helps WellnessGPT build on previous context instead of starting every conversation from the beginning.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Agentic Orchestration Engine",
+          "description": "The Agentic Orchestration Engine is the system that coordinates multiple specialized AI agents to complete larger healthcare workflows. Rather than relying on a single AI system to perform every task, it determines which specialized agent should handle each responsibility, shares relevant context between them, and combines their outputs into one coordinated experience. This allows complex healthcare journeys to be managed through multiple agents while maintaining continuity throughout the workflow.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Specialized Healthcare Agents",
+          "description": "Specialized Healthcare Agents are AI agents designed to perform specific healthcare-related responsibilities instead of relying on one general-purpose assistant for every task. Different agents can focus on areas such as patient assistance, healthcare workflows, operational support, or information retrieval while working together through the Agentic Orchestration Engine. By combining specialized capabilities with shared context from HealthMem, they can contribute to larger healthcare processes without losing continuity.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Sub-150ms Recall",
+          "description": "Sub-150ms Recall refers to the time required for HealthMem to retrieve relevant contextual information during an interaction. Fast context retrieval allows WellnessGPT and specialized healthcare agents to continue conversations and workflows without noticeable delays, helping maintain a responsive experience across patient interactions and operational processes.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Sources Ingested",
+          "description": "A source is an individual body of information made available to the Company Brain. Sources can include structured datasets, documents, knowledge repositories, operational systems, or other organizational information that AI agents use to retrieve context and support healthcare workflows.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Flat-Headcount Margin Expansion",
+          "description": "Flat-headcount margin expansion refers to increasing operational capacity by automating repetitive and time-consuming work while allowing existing teams to focus on higher-value responsibilities. The operational impact depends on how WellnessGPT is deployed and which healthcare workflows are automated within an organization.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Multi-Agent Healthcare Workflows",
+          "description": "Rather than relying on a single AI assistant for every task, WellnessGPT coordinates specialized healthcare agents through the Agentic Orchestration Engine. Each agent performs a specific responsibility while sharing context through HealthMem, allowing larger healthcare workflows to function as one continuous process.",
+          "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Omnichannel Continuity",
+          "description": "WellnessGPT is designed to support healthcare conversations across multiple communication channels, including WhatsApp, voice, and the web. HealthMem maintains relevant context across these interactions so conversations and workflows can continue without restarting whenever a user or healthcare professional switches channels.",
           "inDefinedTermSet": "https://www.wellness-gpt.com/#glossary"
         },
         {
@@ -483,6 +525,54 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a healthcare Company Brain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A healthcare Company Brain is a centralized AI knowledge layer that brings together information from across a healthcare organization into a single system. It enables information to be retrieved, understood, and used through one consistent intelligence layer instead of requiring staff or AI systems to search across multiple sources independently. Within WellnessGPT, the Company Brain supports patient interactions, operational workflows, and specialized healthcare agents using the same shared organizational knowledge. Whether a patient communicates through WhatsApp, voice, the web, or another supported channel, the Company Brain helps maintain a consistent understanding across the healthcare journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is this different from a hospital chatbot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A hospital chatbot is typically designed to answer questions through a single conversational interface, such as a website or messaging application. A Company Brain supports much broader healthcare operations. It provides shared context that powers patient interactions across multiple communication channels while enabling specialized healthcare agents to work together on larger workflows. Conversation is only one interface—the underlying intelligence, memory, and workflow orchestration extend across the entire healthcare ecosystem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Agentic Orchestration Engine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Agentic Orchestration Engine is the coordination layer that manages how specialized healthcare agents work together. Instead of assigning every task to one general AI system, it determines which specialized agent should perform each responsibility, shares relevant context between agents through HealthMem, and coordinates their outputs into a single workflow. This allows complex healthcare journeys to be managed by multiple specialized agents while maintaining continuity throughout the workflow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is HealthMem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HealthMem is WellnessGPT's persistent memory system for healthcare conversations and workflows. It maintains relevant context across interactions so information that has already been shared does not need to be reintroduced every time a new conversation or workflow begins. Whether a patient interacts through WhatsApp, voice, the web, or another supported channel, HealthMem enables WellnessGPT and specialized healthcare agents to continue using relevant context throughout the healthcare journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does WellnessGPT integrate with existing hospital systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WellnessGPT is designed to work alongside existing healthcare systems rather than replacing them. The platform acts as an AI intelligence layer that can use organizational knowledge and existing information sources to support patient interactions, healthcare conversations, and AI-driven workflows. This allows hospitals and healthcare organizations to introduce AI capabilities while continuing to use their existing software, operational processes, and communication channels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What healthcare agents does WellnessGPT offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WellnessGPT uses specialized healthcare agents that are designed to perform different healthcare-related responsibilities instead of relying on one general-purpose assistant. Each agent focuses on a specific function while sharing context through HealthMem and coordinating through the Agentic Orchestration Engine. This allows multiple agents to contribute to larger healthcare workflows without losing continuity, enabling patient interactions and operational processes to function as one connected experience across supported communication channels."
+          }
+        },
         {
           "@type": "Question",
           "name": "What is the WellnessGPT <> ClearMedi Agentic Hospital launch?",
