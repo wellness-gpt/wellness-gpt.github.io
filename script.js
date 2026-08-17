@@ -75,7 +75,11 @@ function initScrollAnimations() {
     ".executive-decisions-section__chips-grid",
     ".org-memory-section__cards-grid",
     ".continuous-learning-section__flow",
-    ".hierarchy-grid"
+    ".hierarchy-grid",
+    ".about-stats-grid",
+    ".about-values__grid",
+    ".about-announcements__list",
+    ".about-team__grid"
   ];
 
   staggerGrids.forEach(selector => {
