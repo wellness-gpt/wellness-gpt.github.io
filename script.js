@@ -75,6 +75,8 @@ function initScrollAnimations() {
     ".executive-decisions-section__chips-grid",
     ".org-memory-section__cards-grid",
     ".continuous-learning-section__flow",
+    ".partner-kpi-grid",
+    ".enterprise-infra-grid",
     ".hierarchy-grid",
     ".about-stats-grid",
     ".about-values__grid",
@@ -252,16 +254,101 @@ function initCardCarousels() {
   });
 }
 
+/* Enterprise Partner Dashboard Tabs */
+function initDashboardTabs() {
+  const tabButtons = document.querySelectorAll(".dash-tab-btn");
+  const tabPanels = document.querySelectorAll(".dash-tab-panel");
+
+  if (!tabButtons.length || !tabPanels.length) return;
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const targetTab = btn.getAttribute("data-tab");
+      if (!targetTab) return;
+
+      tabButtons.forEach(b => {
+        b.classList.remove("is-active");
+        b.setAttribute("aria-selected", "false");
+      });
+      tabPanels.forEach(p => {
+        p.classList.remove("is-active");
+      });
+
+      btn.classList.add("is-active");
+      btn.setAttribute("aria-selected", "true");
+
+      const activePanel = document.querySelector(`.dash-tab-panel[data-panel="${targetTab}"]`);
+      if (activePanel) {
+        activePanel.classList.add("is-active");
+      }
+    });
+  });
+}
+
+/* Dashboard Screenshot Lightbox Modal */
+function initDashboardModal() {
+  const modal = document.querySelector("#dash-modal");
+  if (!modal) return;
+
+  const modalImg = modal.querySelector(".dash-modal__img");
+  const modalTitle = modal.querySelector(".dash-modal__title");
+  const closeBtn = modal.querySelector(".dash-modal__close-btn");
+
+  const openModal = (src, title) => {
+    if (modalImg) modalImg.src = src;
+    if (modalTitle) modalTitle.textContent = title || "Partner Telemetry Inspection";
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  document.querySelectorAll("[data-zoom-img]").forEach(trigger => {
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      const src = trigger.getAttribute("data-zoom-img");
+      const title = trigger.getAttribute("data-zoom-title");
+      if (src) openModal(src, title);
+    });
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeModal);
+  }
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && modal.classList.contains("is-open")) {
+      closeModal();
+    }
+  });
+}
+
 // Initialize when DOM is ready
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", () => {
     initScrollAnimations();
     initVantaBackground();
     initCardCarousels();
+    initDashboardTabs();
+    initDashboardModal();
   });
 } else {
   initScrollAnimations();
   initVantaBackground();
   initCardCarousels();
+  initDashboardTabs();
+  initDashboardModal();
 }
+
 
