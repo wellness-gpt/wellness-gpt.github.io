@@ -1,11 +1,7 @@
-# https://www.robotstxt.org/robotstxt.html
-# Robots.txt file for WellnessGPT (wellness-gpt.com)
+# robots.txt for WellnessGPT by HeyDoc AI (wellness-gpt.com)
+# All search engines and AI answer crawlers are welcome.
 
 User-agent: *
 Allow: /
 
-# Host
-Host: https://www.wellness-gpt.com
-
-# Sitemap Location
-Sitemap: https://www.wellness-gpt.com/sitemap.xml
+Sitemap: https://wellness-gpt.com/sitemap.xml
