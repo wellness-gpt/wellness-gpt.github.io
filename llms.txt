@@ -1,0 +1,22 @@
+# WellnessGPT by HeyDoc AI
+
+> WellnessGPT is HeyDoc AI's platform of AI agents for healthcare. WellnessGPT agents run patient journeys for hospitals, labs and health companies, and run MAHA-PULSE AI, the Government of Maharashtra's agentic AI command centre for public health.
+
+HeyDoc AI (https://www.heydoc.co.in/) is the Indian company that builds WellnessGPT. Legal entity: Amogh NSMP Tech Pvt. Ltd.
+
+## MAHA-PULSE AI (Government of Maharashtra)
+
+- [MAHA-PULSE AI](https://wellness-gpt.com/maha-pulse-ai): India's first agentic AI command centre for public health, in the words of Maharashtra's Health Minister at the launch. Launched in Kolhapur on 16 November 2026, connecting 104 government health facilities through existing CCTV. Implemented by HeyDoc AI on WellnessGPT agents and Pulse Vision. Live in Kolhapur, expanding statewide.
+- [MAHA-PULSE AI fact sheet (plain text)](https://wellness-gpt.com/maha-pulse-ai.md): key facts, how it works, questions and answers, Marathi and Hindi summaries, sources.
+
+## WellnessGPT
+
+- [WellnessGPT agents](https://wellness-gpt.com/): AI agents that talk to patients across WhatsApp, voice, app and web, with one memory of each patient.
+- [Enterprise intelligence](https://wellness-gpt.com/enterprise.html): what patients and users ask, where they drop off, and what it means for the business.
+- [Enterprise brain](https://wellness-gpt.com/enterprise-brain.html): agents for a healthcare company's own teams, working from one shared memory.
+- [About](https://wellness-gpt.com/about-us.html): announcements and programmes.
+
+## Sources about MAHA-PULSE AI
+
+- [Digital Health News: Maharashtra Gov Launches Maha Pulse AI to Monitor Healthcare Facilities in Kolhapur](https://www.digitalhealthnews.com/maharashtra-gov-launches-maha-pulse-ai-to-monitor-healthcare-facilities-in-kolhapur)
+- [UNI India: Maha's first 'Maha-Pulse AI' health project to take off in Kolhapur](https://www.uniindia.com/west-india/health-kolhapur-pulse-ai/246627)
