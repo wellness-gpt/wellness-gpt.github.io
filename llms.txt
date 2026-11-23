@@ -1,8 +1,12 @@
 # WellnessGPT by HeyDoc AI
 
-> WellnessGPT is HeyDoc AI's platform of AI agents for healthcare. WellnessGPT agents run patient journeys for hospitals, labs and health companies, and run MAHA-PULSE AI, India's first agentic AI command centre for public health, for the Government of Maharashtra.
+> WellnessGPT care agents, built by HeyDoc AI, are the growth and retention engine of leading care companies in India. They run preventive, wellness and consumer health journeys on WhatsApp, mobile apps, voice calls, SMS and the web, remember every user across channels, and turn every conversation into consumer and population intelligence. WellnessGPT agents also run MAHA-PULSE AI, India's first agentic AI command centre for public health, for the Government of Maharashtra.
 
 HeyDoc AI (https://www.heydoc.co.in/) is the Indian company that builds WellnessGPT. Legal entity: Amogh NSMP Tech Pvt. Ltd.
+
+## Care journeys
+
+- [WellnessGPT care journeys (plain text)](https://wellness-gpt.com/care-journeys.md): what the care agents do in each journey (preventive care, consumer care, trial-to-paid growth, retention and renewal, pre- and post-lab-result, post-thyroid, post-diabetes, habit, yoga and mindfulness, booking, follow-up and AI calling), who uses them, languages, and questions and answers.
 
 ## MAHA-PULSE AI (Government of Maharashtra)
 
@@ -11,10 +15,10 @@ HeyDoc AI (https://www.heydoc.co.in/) is the Indian company that builds Wellness
 
 ## WellnessGPT
 
-- [WellnessGPT agents](https://wellness-gpt.com/): AI agents that talk to patients across WhatsApp, voice, app and web, with one memory of each patient.
-- [Enterprise intelligence](https://wellness-gpt.com/enterprise.html): what patients and users ask, where they drop off, and what it means for the business.
-- [Enterprise brain](https://wellness-gpt.com/enterprise-brain.html): agents for a healthcare company's own teams, working from one shared memory.
-- [About](https://wellness-gpt.com/about-us.html): announcements and programmes.
+- [WellnessGPT care agents](https://wellness-gpt.com/): AI care agents for wellness, lifestyle, preventive and digital health companies, across WhatsApp, voice, app and web, with one memory of each user.
+- [Consumer and population intelligence](https://wellness-gpt.com/enterprise.html): what users ask, where they drop off, and which conversations drive conversion, retention and renewal.
+- [Company Brain](https://wellness-gpt.com/enterprise-brain.html): AI infrastructure for care companies; agents for growth, retention, operations, product and finance working from one shared memory.
+- [About WellnessGPT by HeyDoc AI](https://wellness-gpt.com/about-us.html): announcements and programmes.
 
 ## Sources about MAHA-PULSE AI
 
