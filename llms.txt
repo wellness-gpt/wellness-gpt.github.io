@@ -1,24 +1,30 @@
 # WellnessGPT by HeyDoc AI
 
-> WellnessGPT care agents, built by HeyDoc AI, are the growth and retention engine of leading care companies in India. They run preventive, wellness and consumer health journeys on WhatsApp, mobile apps, voice calls, SMS and the web, remember every user across channels, and turn every conversation into consumer and population intelligence. WellnessGPT agents also run MAHA-PULSE AI, India's first agentic AI command centre for public health, for the Government of Maharashtra.
+> WellnessGPT care agents, built by HeyDoc AI, are the growth, expansion and retention engine of leading care companies in India. They run operations, preventive care journeys, follow-ups, lab journeys and day-to-day analysis on WhatsApp, mobile apps, voice calls, SMS and the web, remember every user across channels, and turn every conversation into consumer and population intelligence. WellnessGPT agents also run MAHA-PULSE AI, India's first agentic AI command centre for public health, for the Government of Maharashtra.
 
-HeyDoc AI (https://www.heydoc.co.in/) is the Indian company that builds WellnessGPT. Legal entity: Amogh NSMP Tech Pvt. Ltd.
+HeyDoc AI (https://heydoc.co.in/) is the Indian company that builds WellnessGPT. Legal entity: Amogh NSMP Tech Pvt. Ltd. Care companies that use WellnessGPT include wellness and lifestyle programmes, preventive and digital health platforms, diagnostic labs, hospitals and health insurers. Care agents guide users; they do not diagnose, and a clinician or the care company's team can step in on any conversation.
 
-## Care journeys
+## What WellnessGPT care agents do
 
-- [WellnessGPT care journeys (plain text)](https://wellness-gpt.com/care-journeys.md): what the care agents do in each journey (preventive care, consumer care, trial-to-paid growth, retention and renewal, pre- and post-lab-result, post-thyroid, post-diabetes, habit, yoga and mindfulness, booking, follow-up and AI calling), who uses them, languages, and questions and answers.
+- [Growth, expansion and retention](https://wellness-gpt.com/care-journeys.md): convert free and trial users to paid, recommend the next programme, test or plan, bring family members into care, spot users about to lapse, run renewals and win back users who went quiet.
+- [Preventive care journeys](https://wellness-gpt.com/care-journeys.md): daily nudges, habit check-ins, screening reminders and timely follow-ups that keep members on their preventive plan.
+- [Follow-ups](https://wellness-gpt.com/care-journeys.md): after a consultation, test, programme or discharge, care agents follow up on WhatsApp, voice or app until the user completes the next step. AI calling agents make reminder, follow-up and renewal calls in Indian languages.
+- [Labs and diagnostics](https://wellness-gpt.com/care-journeys.md): test booking, preparation and fasting instructions, the report explained in plain language, what to discuss with a doctor, and retest reminders; post-thyroid and post-diabetes journeys after results.
+- [Care operations](https://wellness-gpt.com/enterprise-brain.html): intake, scheduling, reminders and routing handled by agents, so care teams spend less time on manual work.
+- [Day-to-day analysis](https://wellness-gpt.com/enterprise.html): what users asked, where they dropped off, which journeys converted and renewed, and which cohorts are about to lapse, every day.
+
+## Pages
+
+- [WellnessGPT care agents](https://wellness-gpt.com/): AI care agents for wellness, lifestyle, preventive and digital health companies, labs, hospitals and insurers, across WhatsApp, voice, app and web, with one memory of each user.
+- [WellnessGPT care journeys (plain text)](https://wellness-gpt.com/care-journeys.md): every journey the care agents run, who uses them, languages, and questions and answers.
+- [Consumer and population intelligence](https://wellness-gpt.com/enterprise.html): day-to-day analysis of what users ask, where they drop off, and which conversations drive conversion, retention and renewal.
+- [Company Brain](https://wellness-gpt.com/enterprise-brain.html): AI infrastructure for care companies; agents for growth, retention, operations, product and finance working from one shared memory.
+- [About WellnessGPT by HeyDoc AI](https://wellness-gpt.com/about-us.html): announcements and programmes.
 
 ## MAHA-PULSE AI (Government of Maharashtra)
 
 - [MAHA-PULSE AI](https://wellness-gpt.com/maha-pulse-ai): India's first agentic AI command centre for public health. Maharashtra's state-level agentic intelligence system, implemented by HeyDoc AI on WellnessGPT agents. Live in Kolhapur across 104 government health facilities and expanding statewide, it covers doctor presence, crowds and waiting time, cleanliness, emergency services, and a 24x7 WellnessGPT care companion for citizens in Marathi, Hindi and English.
 - [MAHA-PULSE AI fact sheet (plain text)](https://wellness-gpt.com/maha-pulse-ai.md): key facts, what it covers, questions and answers, Marathi and Hindi summaries, sources.
-
-## WellnessGPT
-
-- [WellnessGPT care agents](https://wellness-gpt.com/): AI care agents for wellness, lifestyle, preventive and digital health companies, across WhatsApp, voice, app and web, with one memory of each user.
-- [Consumer and population intelligence](https://wellness-gpt.com/enterprise.html): what users ask, where they drop off, and which conversations drive conversion, retention and renewal.
-- [Company Brain](https://wellness-gpt.com/enterprise-brain.html): AI infrastructure for care companies; agents for growth, retention, operations, product and finance working from one shared memory.
-- [About WellnessGPT by HeyDoc AI](https://wellness-gpt.com/about-us.html): announcements and programmes.
 
 ## Sources about MAHA-PULSE AI
 
@@ -26,3 +32,7 @@ HeyDoc AI (https://www.heydoc.co.in/) is the Indian company that builds Wellness
 - [Health Minister Prakash Abitkar: launch announcement](https://www.instagram.com/p/DfzK6gRAJKo/)
 - [Digital Health News: Maharashtra Gov Launches Maha Pulse AI to Monitor Healthcare Facilities in Kolhapur](https://www.digitalhealthnews.com/maharashtra-gov-launches-maha-pulse-ai-to-monitor-healthcare-facilities-in-kolhapur)
 - [UNI India: Maha's first 'Maha-Pulse AI' health project to take off in Kolhapur](https://www.uniindia.com/west-india/health-kolhapur-pulse-ai/246627)
+
+## Optional
+
+- [HeyDoc AI](https://heydoc.co.in/llms.txt): the company that builds WellnessGPT, and its other products.
